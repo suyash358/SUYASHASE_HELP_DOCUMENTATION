@@ -1,0 +1,655 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests
+  commentId: T:ASE_Assignment_Test_Case.MyAppFillUnitTests
+  id: MyAppFillUnitTests
+  parent: ASE_Assignment_Test_Case
+  children:
+  - ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided
+  - ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided
+  - ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty
+  - ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldInitialize_WhenTextIsValid
+  - ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldThrowException_WhenTextIsNull
+  - ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextExceedsLength
+  - ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace
+  - ASE_Assignment_Test_Case.MyAppFillUnitTests.TestInitialize
+  langs:
+  - csharp
+  - vb
+  name: MyAppFillUnitTests
+  nameWithType: MyAppFillUnitTests
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests
+  type: Class
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: MyAppFillUnitTests
+    path: ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+    startLine: 17
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Unit tests for the MyAppFill command functionality.
+  remarks: This test class verifies the behavior of the MyAppFill command, including parameter validation and execution.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class MyAppFillUnitTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class MyAppFillUnitTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.TestInitialize
+  commentId: M:ASE_Assignment_Test_Case.MyAppFillUnitTests.TestInitialize
+  id: TestInitialize
+  parent: ASE_Assignment_Test_Case.MyAppFillUnitTests
+  langs:
+  - csharp
+  - vb
+  name: TestInitialize()
+  nameWithType: MyAppFillUnitTests.TestInitialize()
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.TestInitialize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestInitialize
+    path: ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+    startLine: 28
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Initializes the test environment by creating a mock Canvas object.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void TestInitialize()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub TestInitialize()
+  overload: ASE_Assignment_Test_Case.MyAppFillUnitTests.TestInitialize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldThrowException_WhenTextIsNull
+  commentId: M:ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldThrowException_WhenTextIsNull
+  id: Constructor_ShouldThrowException_WhenTextIsNull
+  parent: ASE_Assignment_Test_Case.MyAppFillUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_ShouldThrowException_WhenTextIsNull()
+  nameWithType: MyAppFillUnitTests.Constructor_ShouldThrowException_WhenTextIsNull()
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldThrowException_WhenTextIsNull()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Constructor_ShouldThrowException_WhenTextIsNull
+    path: ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+    startLine: 38
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the constructor throws an ArgumentNullException when text is null.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Constructor_ShouldThrowException_WhenTextIsNull()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Constructor_ShouldThrowException_WhenTextIsNull()
+  overload: ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldThrowException_WhenTextIsNull*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldInitialize_WhenTextIsValid
+  commentId: M:ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldInitialize_WhenTextIsValid
+  id: Constructor_ShouldInitialize_WhenTextIsValid
+  parent: ASE_Assignment_Test_Case.MyAppFillUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_ShouldInitialize_WhenTextIsValid()
+  nameWithType: MyAppFillUnitTests.Constructor_ShouldInitialize_WhenTextIsValid()
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldInitialize_WhenTextIsValid()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Constructor_ShouldInitialize_WhenTextIsValid
+    path: ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+    startLine: 47
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the constructor initializes a valid MyAppFill command instance when text is valid.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Constructor_ShouldInitialize_WhenTextIsValid()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Constructor_ShouldInitialize_WhenTextIsValid()
+  overload: ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldInitialize_WhenTextIsValid*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace
+  commentId: M:ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace
+  id: Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace
+  parent: ASE_Assignment_Test_Case.MyAppFillUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace()
+  nameWithType: MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace()
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace
+    path: ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+    startLine: 57
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that Execute throws a RestrictionException when text is whitespace.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace()
+  overload: ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextExceedsLength
+  commentId: M:ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextExceedsLength
+  id: Execute_ShouldThrowRestrictionException_WhenTextExceedsLength
+  parent: ASE_Assignment_Test_Case.MyAppFillUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Execute_ShouldThrowRestrictionException_WhenTextExceedsLength()
+  nameWithType: MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextExceedsLength()
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextExceedsLength()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Execute_ShouldThrowRestrictionException_WhenTextExceedsLength
+    path: ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+    startLine: 67
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that Execute throws a RestrictionException when text exceeds the allowed length.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Execute_ShouldThrowRestrictionException_WhenTextExceedsLength()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Execute_ShouldThrowRestrictionException_WhenTextExceedsLength()
+  overload: ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextExceedsLength*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided
+  commentId: M:ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided
+  id: CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided
+  parent: ASE_Assignment_Test_Case.MyAppFillUnitTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided()
+  nameWithType: MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided()
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided
+    path: ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+    startLine: 77
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that CheckParameters throws a CommandException when no parameters are provided.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided()
+  overload: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided
+  commentId: M:ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided
+  id: CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided
+  parent: ASE_Assignment_Test_Case.MyAppFillUnitTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided()
+  nameWithType: MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided()
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided
+    path: ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+    startLine: 87
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that CheckParameters throws a CommandException when more than one parameter is provided.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided()
+  overload: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty
+  commentId: M:ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty
+  id: CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty
+  parent: ASE_Assignment_Test_Case.MyAppFillUnitTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty()
+  nameWithType: MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty()
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty
+    path: ASE_Assignment_Test_Case/MyAppFillUnitTests.cs
+    startLine: 97
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that CheckParameters throws a CommandException when the parameter is empty.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty()
+  overload: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment_Test_Case
+  commentId: N:ASE_Assignment_Test_Case
+  href: ASE_Assignment_Test_Case.html
+  name: ASE_Assignment_Test_Case
+  nameWithType: ASE_Assignment_Test_Case
+  fullName: ASE_Assignment_Test_Case
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.TestInitialize*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppFillUnitTests.TestInitialize
+  href: ASE_Assignment_Test_Case.MyAppFillUnitTests.html#ASE_Assignment_Test_Case_MyAppFillUnitTests_TestInitialize
+  name: TestInitialize
+  nameWithType: MyAppFillUnitTests.TestInitialize
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.TestInitialize
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldThrowException_WhenTextIsNull*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldThrowException_WhenTextIsNull
+  href: ASE_Assignment_Test_Case.MyAppFillUnitTests.html#ASE_Assignment_Test_Case_MyAppFillUnitTests_Constructor_ShouldThrowException_WhenTextIsNull
+  name: Constructor_ShouldThrowException_WhenTextIsNull
+  nameWithType: MyAppFillUnitTests.Constructor_ShouldThrowException_WhenTextIsNull
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldThrowException_WhenTextIsNull
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldInitialize_WhenTextIsValid*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldInitialize_WhenTextIsValid
+  href: ASE_Assignment_Test_Case.MyAppFillUnitTests.html#ASE_Assignment_Test_Case_MyAppFillUnitTests_Constructor_ShouldInitialize_WhenTextIsValid
+  name: Constructor_ShouldInitialize_WhenTextIsValid
+  nameWithType: MyAppFillUnitTests.Constructor_ShouldInitialize_WhenTextIsValid
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.Constructor_ShouldInitialize_WhenTextIsValid
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace
+  href: ASE_Assignment_Test_Case.MyAppFillUnitTests.html#ASE_Assignment_Test_Case_MyAppFillUnitTests_Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace
+  name: Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace
+  nameWithType: MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextIsWhitespace
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextExceedsLength*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextExceedsLength
+  href: ASE_Assignment_Test_Case.MyAppFillUnitTests.html#ASE_Assignment_Test_Case_MyAppFillUnitTests_Execute_ShouldThrowRestrictionException_WhenTextExceedsLength
+  name: Execute_ShouldThrowRestrictionException_WhenTextExceedsLength
+  nameWithType: MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextExceedsLength
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.Execute_ShouldThrowRestrictionException_WhenTextExceedsLength
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided
+  href: ASE_Assignment_Test_Case.MyAppFillUnitTests.html#ASE_Assignment_Test_Case_MyAppFillUnitTests_CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided
+  name: CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided
+  nameWithType: MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenNoParametersProvided
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided
+  href: ASE_Assignment_Test_Case.MyAppFillUnitTests.html#ASE_Assignment_Test_Case_MyAppFillUnitTests_CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided
+  name: CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided
+  nameWithType: MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenMoreThanOneParameterProvided
+- uid: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty
+  href: ASE_Assignment_Test_Case.MyAppFillUnitTests.html#ASE_Assignment_Test_Case_MyAppFillUnitTests_CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty
+  name: CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty
+  nameWithType: MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty
+  fullName: ASE_Assignment_Test_Case.MyAppFillUnitTests.CheckParameters_ShouldThrowCommandException_WhenParameterIsEmpty

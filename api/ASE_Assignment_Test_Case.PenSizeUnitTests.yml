@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test_Case.PenSizeUnitTests
+  commentId: T:ASE_Assignment_Test_Case.PenSizeUnitTests
+  id: PenSizeUnitTests
+  parent: ASE_Assignment_Test_Case
+  children:
+  - ASE_Assignment_Test_Case.PenSizeUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  - ASE_Assignment_Test_Case.PenSizeUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid
+  - ASE_Assignment_Test_Case.PenSizeUnitTests.Execute_ShouldHandleBoundaryValue_Zero
+  - ASE_Assignment_Test_Case.PenSizeUnitTests.TestInitialize
+  langs:
+  - csharp
+  - vb
+  name: PenSizeUnitTests
+  nameWithType: PenSizeUnitTests
+  fullName: ASE_Assignment_Test_Case.PenSizeUnitTests
+  type: Class
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/PenSizeUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: PenSizeUnitTests
+    path: ASE_Assignment_Test_Case/PenSizeUnitTests.cs
+    startLine: 14
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Unit test class for testing the PenSize command functionality.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class PenSizeUnitTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class PenSizeUnitTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.PenSizeUnitTests.TestInitialize
+  commentId: M:ASE_Assignment_Test_Case.PenSizeUnitTests.TestInitialize
+  id: TestInitialize
+  parent: ASE_Assignment_Test_Case.PenSizeUnitTests
+  langs:
+  - csharp
+  - vb
+  name: TestInitialize()
+  nameWithType: PenSizeUnitTests.TestInitialize()
+  fullName: ASE_Assignment_Test_Case.PenSizeUnitTests.TestInitialize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/PenSizeUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestInitialize
+    path: ASE_Assignment_Test_Case/PenSizeUnitTests.cs
+    startLine: 25
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Sets up the test environment by initializing a mock Canvas object.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void TestInitialize()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub TestInitialize()
+  overload: ASE_Assignment_Test_Case.PenSizeUnitTests.TestInitialize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.PenSizeUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid
+  commentId: M:ASE_Assignment_Test_Case.PenSizeUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid
+  id: Constructor_ShouldInitialize_WhenParametersAreValid
+  parent: ASE_Assignment_Test_Case.PenSizeUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_ShouldInitialize_WhenParametersAreValid()
+  nameWithType: PenSizeUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid()
+  fullName: ASE_Assignment_Test_Case.PenSizeUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/PenSizeUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Constructor_ShouldInitialize_WhenParametersAreValid
+    path: ASE_Assignment_Test_Case/PenSizeUnitTests.cs
+    startLine: 35
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests whether the PenSize constructor initializes properly when valid parameters are provided.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Constructor_ShouldInitialize_WhenParametersAreValid()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Constructor_ShouldInitialize_WhenParametersAreValid()
+  overload: ASE_Assignment_Test_Case.PenSizeUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.PenSizeUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  commentId: M:ASE_Assignment_Test_Case.PenSizeUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  id: CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  parent: ASE_Assignment_Test_Case.PenSizeUnitTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ShouldNotThrow_WhenParametersAreValid()
+  nameWithType: PenSizeUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid()
+  fullName: ASE_Assignment_Test_Case.PenSizeUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/PenSizeUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: CheckParameters_ShouldNotThrow_WhenParametersAreValid
+    path: ASE_Assignment_Test_Case/PenSizeUnitTests.cs
+    startLine: 45
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests whether the CheckParameters method does not throw an exception for valid parameters.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ShouldNotThrow_WhenParametersAreValid()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ShouldNotThrow_WhenParametersAreValid()
+  overload: ASE_Assignment_Test_Case.PenSizeUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.PenSizeUnitTests.Execute_ShouldHandleBoundaryValue_Zero
+  commentId: M:ASE_Assignment_Test_Case.PenSizeUnitTests.Execute_ShouldHandleBoundaryValue_Zero
+  id: Execute_ShouldHandleBoundaryValue_Zero
+  parent: ASE_Assignment_Test_Case.PenSizeUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Execute_ShouldHandleBoundaryValue_Zero()
+  nameWithType: PenSizeUnitTests.Execute_ShouldHandleBoundaryValue_Zero()
+  fullName: ASE_Assignment_Test_Case.PenSizeUnitTests.Execute_ShouldHandleBoundaryValue_Zero()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/PenSizeUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Execute_ShouldHandleBoundaryValue_Zero
+    path: ASE_Assignment_Test_Case/PenSizeUnitTests.cs
+    startLine: 56
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests whether the Execute method handles a boundary value of zero for the pen size.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Execute_ShouldHandleBoundaryValue_Zero()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Execute_ShouldHandleBoundaryValue_Zero()
+  overload: ASE_Assignment_Test_Case.PenSizeUnitTests.Execute_ShouldHandleBoundaryValue_Zero*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment_Test_Case
+  commentId: N:ASE_Assignment_Test_Case
+  href: ASE_Assignment_Test_Case.html
+  name: ASE_Assignment_Test_Case
+  nameWithType: ASE_Assignment_Test_Case
+  fullName: ASE_Assignment_Test_Case
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test_Case.PenSizeUnitTests.TestInitialize*
+  commentId: Overload:ASE_Assignment_Test_Case.PenSizeUnitTests.TestInitialize
+  href: ASE_Assignment_Test_Case.PenSizeUnitTests.html#ASE_Assignment_Test_Case_PenSizeUnitTests_TestInitialize
+  name: TestInitialize
+  nameWithType: PenSizeUnitTests.TestInitialize
+  fullName: ASE_Assignment_Test_Case.PenSizeUnitTests.TestInitialize
+- uid: ASE_Assignment_Test_Case.PenSizeUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid*
+  commentId: Overload:ASE_Assignment_Test_Case.PenSizeUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid
+  href: ASE_Assignment_Test_Case.PenSizeUnitTests.html#ASE_Assignment_Test_Case_PenSizeUnitTests_Constructor_ShouldInitialize_WhenParametersAreValid
+  name: Constructor_ShouldInitialize_WhenParametersAreValid
+  nameWithType: PenSizeUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid
+  fullName: ASE_Assignment_Test_Case.PenSizeUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid
+- uid: ASE_Assignment_Test_Case.PenSizeUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid*
+  commentId: Overload:ASE_Assignment_Test_Case.PenSizeUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  href: ASE_Assignment_Test_Case.PenSizeUnitTests.html#ASE_Assignment_Test_Case_PenSizeUnitTests_CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  name: CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  nameWithType: PenSizeUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  fullName: ASE_Assignment_Test_Case.PenSizeUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid
+- uid: ASE_Assignment_Test_Case.PenSizeUnitTests.Execute_ShouldHandleBoundaryValue_Zero*
+  commentId: Overload:ASE_Assignment_Test_Case.PenSizeUnitTests.Execute_ShouldHandleBoundaryValue_Zero
+  href: ASE_Assignment_Test_Case.PenSizeUnitTests.html#ASE_Assignment_Test_Case_PenSizeUnitTests_Execute_ShouldHandleBoundaryValue_Zero
+  name: Execute_ShouldHandleBoundaryValue_Zero
+  nameWithType: PenSizeUnitTests.Execute_ShouldHandleBoundaryValue_Zero
+  fullName: ASE_Assignment_Test_Case.PenSizeUnitTests.Execute_ShouldHandleBoundaryValue_Zero

@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Suyash_Silwal_77356849.MyApp
+  commentId: N:ASE_Suyash_Silwal_77356849.MyApp
+  id: ASE_Suyash_Silwal_77356849.MyApp
+  children:
+  - ASE_Suyash_Silwal_77356849.MyApp.ApplicationFor
+  - ASE_Suyash_Silwal_77356849.MyApp.CommandParser
+  - ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas
+  - ASE_Suyash_Silwal_77356849.MyApp.StoredCommandFactory
+  langs:
+  - csharp
+  - vb
+  name: ASE_Suyash_Silwal_77356849.MyApp
+  nameWithType: ASE_Suyash_Silwal_77356849.MyApp
+  fullName: ASE_Suyash_Silwal_77356849.MyApp
+  type: Namespace
+  assemblies:
+  - ASE_Suyash_Silwal_77356849
+references:
+- uid: ASE_Suyash_Silwal_77356849.MyApp.ApplicationFor
+  commentId: T:ASE_Suyash_Silwal_77356849.MyApp.ApplicationFor
+  href: ASE_Suyash_Silwal_77356849.MyApp.ApplicationFor.html
+  name: ApplicationFor
+  nameWithType: ApplicationFor
+  fullName: ASE_Suyash_Silwal_77356849.MyApp.ApplicationFor
+- uid: ASE_Suyash_Silwal_77356849.MyApp.CommandParser
+  commentId: T:ASE_Suyash_Silwal_77356849.MyApp.CommandParser
+  href: ASE_Suyash_Silwal_77356849.MyApp.CommandParser.html
+  name: CommandParser
+  nameWithType: CommandParser
+  fullName: ASE_Suyash_Silwal_77356849.MyApp.CommandParser
+- uid: ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas
+  commentId: T:ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas
+  parent: ASE_Suyash_Silwal_77356849.MyApp
+  href: ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.html
+  name: DrawingCanvas
+  nameWithType: DrawingCanvas
+  fullName: ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas
+- uid: ASE_Suyash_Silwal_77356849.MyApp.StoredCommandFactory
+  commentId: T:ASE_Suyash_Silwal_77356849.MyApp.StoredCommandFactory
+  href: ASE_Suyash_Silwal_77356849.MyApp.StoredCommandFactory.html
+  name: StoredCommandFactory
+  nameWithType: StoredCommandFactory
+  fullName: ASE_Suyash_Silwal_77356849.MyApp.StoredCommandFactory
+- uid: ASE_Suyash_Silwal_77356849.MyApp
+  commentId: N:ASE_Suyash_Silwal_77356849.MyApp
+  href: ASE_Suyash_Silwal_77356849.html
+  name: ASE_Suyash_Silwal_77356849.MyApp
+  nameWithType: ASE_Suyash_Silwal_77356849.MyApp
+  fullName: ASE_Suyash_Silwal_77356849.MyApp
+  spec.csharp:
+  - uid: ASE_Suyash_Silwal_77356849
+    name: ASE_Suyash_Silwal_77356849
+    href: ASE_Suyash_Silwal_77356849.html
+  - name: .
+  - uid: ASE_Suyash_Silwal_77356849.MyApp
+    name: MyApp
+    href: ASE_Suyash_Silwal_77356849.MyApp.html
+  spec.vb:
+  - uid: ASE_Suyash_Silwal_77356849
+    name: ASE_Suyash_Silwal_77356849
+    href: ASE_Suyash_Silwal_77356849.html
+  - name: .
+  - uid: ASE_Suyash_Silwal_77356849.MyApp
+    name: MyApp
+    href: ASE_Suyash_Silwal_77356849.MyApp.html

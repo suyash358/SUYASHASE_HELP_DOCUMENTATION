@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class DrawingCanvas | ASE Project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class DrawingCanvas | ASE Project ">
+      
+      <meta name="description" content="Implementation of the  interface for performing drawing operations on a bitmap canvas.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/new/main/apiSpec/new?filename=ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas.md&amp;value=---%0Auid%3A%20ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ASE Project">
+            ASE Project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas">
+
+
+
+  <h1 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas" class="text-break">
+Class DrawingCanvas  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ASE_Suyash_Silwal_77356849.html">ASE_Suyash_Silwal_77356849</a>.<a class="xref" href="ASE_Suyash_Silwal_77356849.MyApp.html">MyApp</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ASE_Suyash_Silwal_77356849.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Implementation of the <span class="xref">BOOSE.ICanvas</span> interface for performing drawing operations on a bitmap canvas.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DrawingCanvas : ICanvas</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">DrawingCanvas</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">ICanvas</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class provides methods for drawing various shapes (lines, circles, rectangles, triangles) and text on a canvas
+represented by a bitmap. It supports operations such as setting the pen color and size, moving the pen to a new
+position, and resetting the canvas to its initial state. The canvas is defined by a width (XSIDE) and height (YSIDE),
+which are used to constrain drawing operations within the canvas boundaries. The class utilizes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a>
+object to perform rendering on the canvas.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas__ctor_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.#ctor*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas__ctor" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.#ctor">
+  DrawingCanvas()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.html">DrawingCanvas</a> class with default canvas size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawingCanvas()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas__ctor_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This constructor sets the canvas size to the default values defined by the constants <code>XSIDE</code> and <code>YSIDE</code>.
+It also initializes the pen size to 1 and sets the pen color to black (RGB: 0, 0, 0).</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if the canvas size cannot be set properly or if invalid values are provided for pen size or color.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Filled_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Filled*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Filled" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Filled">
+  Filled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L197"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Filled { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_PenColour_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.PenColour*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_PenColour" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.PenColour">
+  PenColour
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the pen color for the next drawing operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object PenColour { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_PenColour_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This property allows you to retrieve or modify the current pen color used for drawing operations.
+The color is represented as a <code>Color</code> object, and it determines the color of lines, shapes,
+and other drawn elements on the canvas.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidcastexception">InvalidCastException</a></dt>
+    <dd><p>Thrown if the provided value for the pen color is not a valid <code>Color</code> object.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_PenSize_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.PenSize*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_PenSize" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.PenSize">
+  PenSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the pen size, which determines the thickness of the lines drawn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PenSize { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The pen size, which is a positive integer. It determines how thick the lines will appear on the canvas.
+A value greater than zero is required. If the value is zero or negative, an exception will be thrown.</p>
+</dd>
+  </dl>
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown when the pen size is set to a value less than or equal to zero.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_XSIDE_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.XSIDE*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_XSIDE" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.XSIDE">
+  XSIDE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The width of the canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int XSIDE { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_XSIDE_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This defines the horizontal dimension of the canvas. It is used to validate the X positions during drawing operations.
+The default value is 640 pixels.</p>
+</div>
+
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Xpos_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Xpos*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Xpos" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Xpos">
+  Xpos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the X position for the next drawing operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Xpos { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Xpos_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This property controls the X coordinate of the pen position, which determines
+the vertical position for subsequent drawing operations on the canvas.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if the Y position is outside the allowed canvas boundaries (less than 0 or greater than the canvas height).</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_YSIDE_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.YSIDE*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_YSIDE" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.YSIDE">
+  YSIDE
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The height of the canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int YSIDE { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_YSIDE_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This defines the vertical dimension of the canvas. It is used to validate the Y positions during drawing operations.
+The default value is 480 pixels.</p>
+</div>
+
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Ypos_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Ypos*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Ypos" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Ypos">
+  Ypos
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L269"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the Y position for the next drawing operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Ypos { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Ypos_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This property controls the Y coordinate of the pen position, which determines
+the vertical position for subsequent drawing operations on the canvas.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if the Y position is outside the allowed canvas boundaries (less than 0 or greater than the canvas height).</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Circle_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Circle*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Circle_System_Int32_System_Boolean_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Circle(System.Int32,System.Boolean)">
+  Circle(int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L419"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attempts to draw a circle at the current pen position, either filled or outlined, depending on the specified parameter.
+Ensures the radius is valid and checks if the circle fits within the canvas boundaries.
+If the radius is invalid or the circle exceeds the canvas size, a warning is logged, and drawing is skipped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Circle(int radius, bool filled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>radius</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The radius of the circle. Must be a positive integer greater than zero.
+If the radius is invalid, the circle will not be drawn, and a warning will be logged.</p>
+</dd>
+    <dt><code>filled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A boolean indicating whether the circle should be filled or outlined:</p>
+<ul><li><code>true</code>: Draws a filled circle.</li><li><code>false</code>: Draws an outlined circle.</li></ul>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Circle_System_Int32_System_Boolean__examples">Examples</h4>
+  <p>The following example demonstrates how to draw a filled circle with a radius of 50:</p>
+<pre><code class="lang-csharp">Circle(50, true);</code></pre>
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Circle_System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The method ensures that drawing operations do not disrupt the program's flow. If the circle cannot
+be drawn due to invalid input or canvas boundary constraints, the method logs a warning and continues execution.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>This exception is caught internally to prevent program termination. It is used to log errors
+for invalid radius values or when the circle exceeds canvas dimensions.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Clear_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Clear*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Clear" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L471"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears the canvas by filling it with a default background color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_DrawTo_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.DrawTo*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_DrawTo_System_Int32_System_Int32_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.DrawTo(System.Int32,System.Int32)">
+  DrawTo(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L501"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a line from the current pen position to a specified endpoint on the canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawTo(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The X coordinate of the endpoint of the line. This value represents the position along the horizontal axis.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Y coordinate of the endpoint of the line. This value represents the position along the vertical axis.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_DrawTo_System_Int32_System_Int32__examples">Examples</h4>
+  <p>The following example demonstrates how to draw a line from the current pen position to the point (100, 50):</p>
+<pre><code class="lang-csharp">DrawTo(100, 50);</code></pre>
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_DrawTo_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The method updates the pen's current position to the specified endpoint after the line is drawn.
+Subsequent drawing operations will use the new position as the starting point.
+If the line cannot be drawn due to an uninitialized graphics context, the method logs a warning but does not interrupt execution.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if the graphics context is not initialized or if the specified coordinates are outside the canvas boundaries.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_GetGraphics_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.GetGraphics*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_GetGraphics" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.GetGraphics">
+  GetGraphics()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L819"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the current Graphics object used for drawing on the canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graphics GetGraphics()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></dt>
+    <dd><p>The Graphics object associated with the current canvas.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_GetGraphics_examples">Examples</h4>
+  <p>The following example demonstrates how to retrieve the current Graphics object and
+handle any potential exceptions if the graphics object is not initialized:</p>
+<pre><code class="lang-csharp">try
+{
+    Graphics currentGraphics = GetGraphics();
+    // Use currentGraphics for drawing operations, if not null
+}
+catch (CanvasException ex)
+{
+    Console.WriteLine($"Error: {ex.Message}"); // Handle the error (e.g., log it)
+}</code></pre>
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_GetGraphics_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method allows access to the internal <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> object used for drawing on the canvas.
+If the graphics object has not been initialized (i.e., it is null), a <span class="xref">BOOSE.CanvasException</span> is thrown,
+indicating that the drawing cannot proceed.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if the graphics object is not initialized or is null. This exception is thrown
+when there is an attempt to retrieve the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> object before it is set.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_MoveTo_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.MoveTo*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_MoveTo_System_Int32_System_Int32_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.MoveTo(System.Int32,System.Int32)">
+  MoveTo(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L594"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves the drawing cursor to a specified position on the canvas without drawing any lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveTo(int x, int y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The X coordinate to move the cursor to. Represents the horizontal position on the canvas.
+Must be within the canvas boundaries.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Y coordinate to move the cursor to. Represents the vertical position on the canvas.
+Must be within the canvas boundaries.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_MoveTo_System_Int32_System_Int32__examples">Examples</h4>
+  <p>The following example demonstrates how to move the pen to position (50, 100) without drawing:</p>
+<pre><code class="lang-csharp">MoveTo(50, 100);</code></pre>
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_MoveTo_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method updates the current position of the pen to the specified coordinates <code>(x, y)</code> without performing any drawing operations.
+It ensures that subsequent drawing operations begin from the new cursor position.
+If the specified coordinates are outside the canvas boundaries, the position is not updated, and a warning is logged.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if the specified coordinates are outside the canvas boundaries defined by <code>XSIDE</code> and <code>YSIDE</code>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Rect_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Rect*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Rect_System_Int32_System_Int32_System_Boolean_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Rect(System.Int32,System.Int32,System.Boolean)">
+  Rect(int, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L649"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a rectangle at the current cursor position with the specified dimensions and style (filled or outline).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rect(int width, int height, bool filled)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width of the rectangle. Must be a positive integer greater than zero.
+If the value is invalid, the rectangle will not be drawn, and a warning will be logged.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height of the rectangle. Must be a positive integer greater than zero.
+If the value is invalid, the rectangle will not be drawn, and a warning will be logged.</p>
+</dd>
+    <dt><code>filled</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>A boolean indicating whether the rectangle should be filled or outlined:</p>
+<ul><li><code>true</code>: Draws a filled rectangle.</li><li><code>false</code>: Draws an outlined rectangle.</li></ul>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Rect_System_Int32_System_Int32_System_Boolean__examples">Examples</h4>
+  <p>The following example demonstrates how to draw a filled rectangle with a width of 100 and height of 50:</p>
+<pre><code class="lang-csharp">Rect(100, 50, true);</code></pre>
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Rect_System_Int32_System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The rectangle is drawn starting from the current cursor position <code>(xPos, yPos)</code>.
+If the rectangle's dimensions are invalid or it exceeds the canvas boundaries, it will not be drawn,
+and a warning will be logged. This ensures the program continues execution without interruption.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if the specified rectangle dimensions are invalid or if the rectangle exceeds canvas boundaries.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Reset_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Reset*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Reset" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Reset">
+  Reset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L711"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the canvas to its initial state by resetting the drawing cursor position to the top-left corner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Reset_examples">Examples</h4>
+  <p>The following example demonstrates how to reset the canvas and start fresh with drawing:</p>
+<pre><code class="lang-csharp">Reset(); // Resets the drawing cursor to the top-left corner</code></pre>
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Reset_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method resets the drawing cursor (pen position) to the initial position at (0, 0).
+Any previous drawing operations will not be affected, but the next drawing operations
+will begin from the top-left corner of the canvas.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if there is an issue with resetting the canvas. For example, if the canvas is in an
+invalid state or has not been properly initialized, an exception could be thrown.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Set_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Set*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Set_System_Int32_System_Int32_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Set(System.Int32,System.Int32)">
+  Set(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the canvas size and initializes the drawing surface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(int xsize, int ysize)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>xsize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width of the canvas, in pixels.</p>
+</dd>
+    <dt><code>ysize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height of the canvas, in pixels.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Set_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method initializes the canvas with the specified width and height. It also sets the starting
+position of the drawing cursor (xPos, yPos) to the top-left corner (0, 0). After setting the canvas size,
+it creates a new <code>Bitmap</code> object for drawing and a corresponding <code>Graphics</code> object. Additionally,
+it clears the canvas to prepare for drawing.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if the width or height of the canvas is invalid (e.g., negative or zero), or if there is an error
+during the initialization of the drawing surface.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_SetCanvas_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.SetCanvas*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_SetCanvas_System_Drawing_Bitmap_System_Drawing_Graphics_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.SetCanvas(System.Drawing.Bitmap,System.Drawing.Graphics)">
+  SetCanvas(Bitmap, Graphics)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L760"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the canvas by assigning the provided <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> objects
+for drawing operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCanvas(Bitmap newBitmap, Graphics newGraphics)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newBitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.bitmap">Bitmap</a> object to be used as the canvas surface.
+This object holds the pixel data for the canvas.</p>
+</dd>
+    <dt><code>newGraphics</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a></dt>
+    <dd><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.drawing.graphics">Graphics</a> object to be used for rendering on the canvas.
+This object provides drawing capabilities like shapes, text, and images.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_SetCanvas_System_Drawing_Bitmap_System_Drawing_Graphics__examples">Examples</h4>
+  <p>The following example demonstrates how to initialize a canvas with a 500x500 Bitmap:</p>
+<pre><code class="lang-csharp">Bitmap bitmap = new Bitmap(500, 500);
+Graphics graphics = Graphics.FromImage(bitmap);
+SetCanvas(bitmap, graphics);</code></pre>
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_SetCanvas_System_Drawing_Bitmap_System_Drawing_Graphics__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method initializes or reinitializes the internal canvas by setting the Bitmap and Graphics objects.
+After setting the canvas, it clears the drawing surface with a white background to provide a fresh start.
+If you need a specific background color, you can modify the method to accept a color parameter or change the
+default behavior.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if either <code class="paramref">newBitmap</code> or <code class="paramref">newGraphics</code> is <code>null</code>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_SetColour_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.SetColour*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_SetColour_System_Int32_System_Int32_System_Int32_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.SetColour(System.Int32,System.Int32,System.Int32)">
+  SetColour(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L862"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the pen color using specified RGB values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColour(int red, int green, int blue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>red</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The red component of the color, ranging from 0 to 255.</p>
+</dd>
+    <dt><code>green</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The green component of the color, ranging from 0 to 255.</p>
+</dd>
+    <dt><code>blue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The blue component of the color, ranging from 0 to 255.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_SetColour_System_Int32_System_Int32_System_Int32__examples">Examples</h4>
+  <p>The following example demonstrates how to set the pen color to blue:</p>
+<pre><code class="lang-csharp">SetColour(0, 0, 255); // Sets the pen color to pure blue</code></pre>
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_SetColour_System_Int32_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method allows precise control of the pen's color by specifying the intensity of
+red, green, and blue components. If an invalid value is provided, an exception is thrown.
+The pen is updated with the new color and retains the existing pen size.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown when any of the RGB components are outside the valid range of 0 to 255.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Tri_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Tri*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Tri_System_Int32_System_Int32_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.Tri(System.Int32,System.Int32)">
+  Tri(int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L903"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws a triangle within the specified bounding rectangle, ensuring it fits within the canvas boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Tri(int width, int height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width of the bounding rectangle, which defines the base of the triangle.</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height of the bounding rectangle, which defines the height of the triangle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Tri_System_Int32_System_Int32__examples">Examples</h4>
+  <p>The following example demonstrates how to draw a triangle with width 100 and height 50:</p>
+<pre><code class="lang-csharp">Tri(100, 50); // Draws a triangle with base 100 and height 50</code></pre>
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_Tri_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The method validates the triangle's width and height to ensure they are positive. It then checks if the triangle's
+bounding points fit within the canvas boundaries. If any point exceeds the canvas size, a CanvasException is thrown.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if the triangle dimensions are invalid, exceed canvas boundaries, or are non-positive.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_WriteText_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.WriteText*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_WriteText_System_String_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.WriteText(System.String)">
+  WriteText(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L968"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Draws the specified text at the current cursor position on the canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteText(string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text to be drawn on the canvas.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_WriteText_System_String__examples">Examples</h4>
+  <p>The following example demonstrates how to draw text at the current position:</p>
+<pre><code class="lang-csharp">WriteText("Hello, Canvas!"); // Draws the text "Hello, Canvas!" at the current cursor position</code></pre>
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_WriteText_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The method checks whether the input text is valid (not null, empty, or whitespace). If the text exceeds the canvas boundaries,
+a <span class="xref">BOOSE.CanvasException</span> is thrown. The method also ensures the graphics object is initialized before attempting
+to draw the text.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if the text is null, empty, or exceeds canvas boundaries. It is also thrown if the graphics object is not initialized.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_getBitmap_" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.getBitmap*"></a>
+
+  <h3 id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_getBitmap" data-uid="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.getBitmap">
+  getBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L549"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the Bitmap object representing the current drawing on the canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object getBitmap()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>The Bitmap object associated with the current canvas. This object contains the pixel data
+for the current drawing and can be used to save or manipulate the canvas image.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ASE_Suyash_Silwal_77356849_MyApp_DrawingCanvas_getBitmap_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The Bitmap object returned by this method reflects the current state of the canvas,
+including any drawings made with the pen. If no drawing has been done, it will return
+an empty or unmodified bitmap.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><span class="xref">CanvasException</span></dt>
+    <dd><p>Thrown if the Bitmap object has not been initialized or there is an issue with accessing it.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Suyash_Silwal_77356849/MyApp/DrawingCanvas.cs/#L21" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

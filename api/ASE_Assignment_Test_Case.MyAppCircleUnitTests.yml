@@ -1,0 +1,475 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test_Case.MyAppCircleUnitTests
+  commentId: T:ASE_Assignment_Test_Case.MyAppCircleUnitTests
+  id: MyAppCircleUnitTests
+  parent: ASE_Assignment_Test_Case
+  children:
+  - ASE_Assignment_Test_Case.MyAppCircleUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  - ASE_Assignment_Test_Case.MyAppCircleUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid
+  - ASE_Assignment_Test_Case.MyAppCircleUnitTests.TestInitialize
+  langs:
+  - csharp
+  - vb
+  name: MyAppCircleUnitTests
+  nameWithType: MyAppCircleUnitTests
+  fullName: ASE_Assignment_Test_Case.MyAppCircleUnitTests
+  type: Class
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCircleUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: MyAppCircleUnitTests
+    path: ASE_Assignment_Test_Case/MyAppCircleUnitTests.cs
+    startLine: 14
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Unit tests for the <xref href="ASE_Suyash_Silwal_77356849.MyAppCircle" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class MyAppCircleUnitTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class MyAppCircleUnitTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppCircleUnitTests.TestInitialize
+  commentId: M:ASE_Assignment_Test_Case.MyAppCircleUnitTests.TestInitialize
+  id: TestInitialize
+  parent: ASE_Assignment_Test_Case.MyAppCircleUnitTests
+  langs:
+  - csharp
+  - vb
+  name: TestInitialize()
+  nameWithType: MyAppCircleUnitTests.TestInitialize()
+  fullName: ASE_Assignment_Test_Case.MyAppCircleUnitTests.TestInitialize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCircleUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestInitialize
+    path: ASE_Assignment_Test_Case/MyAppCircleUnitTests.cs
+    startLine: 23
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Initializes resources needed for the tests.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void TestInitialize()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub TestInitialize()
+  overload: ASE_Assignment_Test_Case.MyAppCircleUnitTests.TestInitialize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppCircleUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid
+  commentId: M:ASE_Assignment_Test_Case.MyAppCircleUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid
+  id: Constructor_ShouldInitialize_WhenParametersAreValid
+  parent: ASE_Assignment_Test_Case.MyAppCircleUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_ShouldInitialize_WhenParametersAreValid()
+  nameWithType: MyAppCircleUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid()
+  fullName: ASE_Assignment_Test_Case.MyAppCircleUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCircleUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Constructor_ShouldInitialize_WhenParametersAreValid
+    path: ASE_Assignment_Test_Case/MyAppCircleUnitTests.cs
+    startLine: 34
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the constructor correctly initializes an instance of <xref href="ASE_Suyash_Silwal_77356849.MyAppCircle" data-throw-if-not-resolved="false"></xref>
+
+    when provided with valid parameters.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Constructor_ShouldInitialize_WhenParametersAreValid()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Constructor_ShouldInitialize_WhenParametersAreValid()
+  overload: ASE_Assignment_Test_Case.MyAppCircleUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppCircleUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  commentId: M:ASE_Assignment_Test_Case.MyAppCircleUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  id: CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  parent: ASE_Assignment_Test_Case.MyAppCircleUnitTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ShouldNotThrow_WhenParametersAreValid()
+  nameWithType: MyAppCircleUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid()
+  fullName: ASE_Assignment_Test_Case.MyAppCircleUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCircleUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: CheckParameters_ShouldNotThrow_WhenParametersAreValid
+    path: ASE_Assignment_Test_Case/MyAppCircleUnitTests.cs
+    startLine: 46
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Verifies that <xref href="ASE_Suyash_Silwal_77356849.MyAppCircle.CheckParameters(System.String%5b%5d)" data-throw-if-not-resolved="false"></xref> does not throw
+
+    an exception when provided with valid parameters.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ShouldNotThrow_WhenParametersAreValid()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ShouldNotThrow_WhenParametersAreValid()
+  overload: ASE_Assignment_Test_Case.MyAppCircleUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Suyash_Silwal_77356849.MyAppCircle
+  commentId: T:ASE_Suyash_Silwal_77356849.MyAppCircle
+  href: ASE_Suyash_Silwal_77356849.MyAppCircle.html
+  name: MyAppCircle
+  nameWithType: MyAppCircle
+  fullName: ASE_Suyash_Silwal_77356849.MyAppCircle
+- uid: ASE_Assignment_Test_Case
+  commentId: N:ASE_Assignment_Test_Case
+  href: ASE_Assignment_Test_Case.html
+  name: ASE_Assignment_Test_Case
+  nameWithType: ASE_Assignment_Test_Case
+  fullName: ASE_Assignment_Test_Case
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test_Case.MyAppCircleUnitTests.TestInitialize*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppCircleUnitTests.TestInitialize
+  href: ASE_Assignment_Test_Case.MyAppCircleUnitTests.html#ASE_Assignment_Test_Case_MyAppCircleUnitTests_TestInitialize
+  name: TestInitialize
+  nameWithType: MyAppCircleUnitTests.TestInitialize
+  fullName: ASE_Assignment_Test_Case.MyAppCircleUnitTests.TestInitialize
+- uid: ASE_Assignment_Test_Case.MyAppCircleUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppCircleUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid
+  href: ASE_Assignment_Test_Case.MyAppCircleUnitTests.html#ASE_Assignment_Test_Case_MyAppCircleUnitTests_Constructor_ShouldInitialize_WhenParametersAreValid
+  name: Constructor_ShouldInitialize_WhenParametersAreValid
+  nameWithType: MyAppCircleUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid
+  fullName: ASE_Assignment_Test_Case.MyAppCircleUnitTests.Constructor_ShouldInitialize_WhenParametersAreValid
+- uid: ASE_Suyash_Silwal_77356849.MyAppCircle.CheckParameters(System.String[])
+  commentId: M:ASE_Suyash_Silwal_77356849.MyAppCircle.CheckParameters(System.String[])
+  isExternal: true
+  href: ASE_Suyash_Silwal_77356849.MyAppCircle.html#ASE_Suyash_Silwal_77356849_MyAppCircle_CheckParameters_System_String___
+  name: CheckParameters(string[])
+  nameWithType: MyAppCircle.CheckParameters(string[])
+  fullName: ASE_Suyash_Silwal_77356849.MyAppCircle.CheckParameters(string[])
+  nameWithType.vb: MyAppCircle.CheckParameters(String())
+  fullName.vb: ASE_Suyash_Silwal_77356849.MyAppCircle.CheckParameters(String())
+  name.vb: CheckParameters(String())
+  spec.csharp:
+  - uid: ASE_Suyash_Silwal_77356849.MyAppCircle.CheckParameters(System.String[])
+    name: CheckParameters
+    href: ASE_Suyash_Silwal_77356849.MyAppCircle.html#ASE_Suyash_Silwal_77356849_MyAppCircle_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: ASE_Suyash_Silwal_77356849.MyAppCircle.CheckParameters(System.String[])
+    name: CheckParameters
+    href: ASE_Suyash_Silwal_77356849.MyAppCircle.html#ASE_Suyash_Silwal_77356849_MyAppCircle_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: ASE_Assignment_Test_Case.MyAppCircleUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppCircleUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  href: ASE_Assignment_Test_Case.MyAppCircleUnitTests.html#ASE_Assignment_Test_Case_MyAppCircleUnitTests_CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  name: CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  nameWithType: MyAppCircleUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid
+  fullName: ASE_Assignment_Test_Case.MyAppCircleUnitTests.CheckParameters_ShouldNotThrow_WhenParametersAreValid

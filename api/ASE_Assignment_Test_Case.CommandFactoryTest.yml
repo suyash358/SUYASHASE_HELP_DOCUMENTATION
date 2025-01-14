@@ -1,0 +1,1660 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest
+  commentId: T:ASE_Assignment_Test_Case.CommandFactoryTest
+  id: CommandFactoryTest
+  parent: ASE_Assignment_Test_Case
+  children:
+  - ASE_Assignment_Test_Case.CommandFactoryTest.SetUp
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Array_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Boolean_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Call_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Circle_ShouldReturnAppCircle
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Clear_ShouldReturnClear
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Else_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_End_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Evaluation_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Fill_ShouldReturnFill
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_For_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_If_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Int_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Peek_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenSize_ShouldReturnPenSize
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Poke_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Real_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Rect_ShouldReturnAppRectangle
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Reset_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Tri_ShouldReturnTriangle
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_While_ShouldReturnReset
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  - ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_method_ShouldReturnReset
+  langs:
+  - csharp
+  - vb
+  name: CommandFactoryTest
+  nameWithType: CommandFactoryTest
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest
+  type: Class
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: CommandFactoryTest
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 17
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Unit tests for the StoredCommandFactory class.
+
+    Ensures that the MakeCommand method correctly creates instances of commands
+
+    and handles invalid inputs appropriately.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class CommandFactoryTest
+    content.vb: >-
+      <TestClass>
+
+      Public Class CommandFactoryTest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.SetUp
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.SetUp
+  id: SetUp
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: SetUp()
+  nameWithType: CommandFactoryTest.SetUp()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.SetUp()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: SetUp
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 28
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Initializes the test by creating a new instance of StoredCommandFactory.
+
+    This method is executed before each test method runs.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void SetUp()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub SetUp()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.SetUp*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Circle_ShouldReturnAppCircle
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Circle_ShouldReturnAppCircle
+  id: TestMakeCommand_Circle_ShouldReturnAppCircle
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Circle_ShouldReturnAppCircle()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Circle_ShouldReturnAppCircle()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Circle_ShouldReturnAppCircle()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Circle_ShouldReturnAppCircle
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 42
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the MakeCommand method returns an instance of MyAppCircle
+
+    when provided with the "circle" command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Circle_ShouldReturnAppCircle()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Circle_ShouldReturnAppCircle()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Circle_ShouldReturnAppCircle*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  id: TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()
+  nameWithType: CommandFactoryTest.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 70
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the MakeCommand method returns an instance of MyAppMoveTo
+
+    when provided with the "moveto" command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Rect_ShouldReturnAppRectangle
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Rect_ShouldReturnAppRectangle
+  id: TestMakeCommand_Rect_ShouldReturnAppRectangle
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Rect_ShouldReturnAppRectangle()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Rect_ShouldReturnAppRectangle()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Rect_ShouldReturnAppRectangle()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Rect_ShouldReturnAppRectangle
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 98
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the MakeCommand method returns an instance of MyAppRectangle
+
+    when provided with the "rect" command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Rect_ShouldReturnAppRectangle()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Rect_ShouldReturnAppRectangle()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Rect_ShouldReturnAppRectangle*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Tri_ShouldReturnTriangle
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Tri_ShouldReturnTriangle
+  id: TestMakeCommand_Tri_ShouldReturnTriangle
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Tri_ShouldReturnTriangle()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Tri_ShouldReturnTriangle()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Tri_ShouldReturnTriangle()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Tri_ShouldReturnTriangle
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 126
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the MakeCommand method returns an instance of MyAppTriangle
+
+    when provided with the "tri" command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Tri_ShouldReturnTriangle()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Tri_ShouldReturnTriangle()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Tri_ShouldReturnTriangle*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  id: TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_WriteTo_ShouldReturnWriteTo()
+  nameWithType: CommandFactoryTest.TestMakeCommand_WriteTo_ShouldReturnWriteTo()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_WriteTo_ShouldReturnWriteTo()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_WriteTo_ShouldReturnWriteTo
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 155
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the MakeCommand method returns an instance of MyAppWriteText
+
+    when provided with the "writeto" command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_WriteTo_ShouldReturnWriteTo()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_WriteTo_ShouldReturnWriteTo()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_WriteTo_ShouldReturnWriteTo*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  id: TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()
+  nameWithType: CommandFactoryTest.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 183
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the MakeCommand method returns an instance of MyAppDrawTo
+
+    when provided with the "drawto" command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  id: TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_PenColour_ShouldReturnAppPenColour()
+  nameWithType: CommandFactoryTest.TestMakeCommand_PenColour_ShouldReturnAppPenColour()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenColour_ShouldReturnAppPenColour()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_PenColour_ShouldReturnAppPenColour
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 212
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the MakeCommand method returns an instance of MyAppPenColour
+
+    when provided with the "pencolour" command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_PenColour_ShouldReturnAppPenColour()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_PenColour_ShouldReturnAppPenColour()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenColour_ShouldReturnAppPenColour*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Fill_ShouldReturnFill
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Fill_ShouldReturnFill
+  id: TestMakeCommand_Fill_ShouldReturnFill
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Fill_ShouldReturnFill()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Fill_ShouldReturnFill()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Fill_ShouldReturnFill()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Fill_ShouldReturnFill
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 240
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the MakeCommand method returns an instance of MyAppFill
+
+    when provided with the "fill" command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Fill_ShouldReturnFill()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Fill_ShouldReturnFill()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Fill_ShouldReturnFill*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenSize_ShouldReturnPenSize
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenSize_ShouldReturnPenSize
+  id: TestMakeCommand_PenSize_ShouldReturnPenSize
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_PenSize_ShouldReturnPenSize()
+  nameWithType: CommandFactoryTest.TestMakeCommand_PenSize_ShouldReturnPenSize()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenSize_ShouldReturnPenSize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_PenSize_ShouldReturnPenSize
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 269
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the MakeCommand method returns an instance of MyAppPenSize
+
+    when provided with the "pensize" command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_PenSize_ShouldReturnPenSize()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_PenSize_ShouldReturnPenSize()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenSize_ShouldReturnPenSize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Clear_ShouldReturnClear
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Clear_ShouldReturnClear
+  id: TestMakeCommand_Clear_ShouldReturnClear
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Clear_ShouldReturnClear()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Clear_ShouldReturnClear()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Clear_ShouldReturnClear()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Clear_ShouldReturnClear
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 297
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the MakeCommand method returns an instance of MyAppClear
+
+    when provided with the "clear" command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Clear_ShouldReturnClear()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Clear_ShouldReturnClear()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Clear_ShouldReturnClear*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Reset_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Reset_ShouldReturnReset
+  id: TestMakeCommand_Reset_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Reset_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Reset_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Reset_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Reset_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 326
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the MakeCommand method returns an instance of MyAppReset
+
+    when provided with the "reset" command.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Reset_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Reset_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Reset_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  id: TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()
+  nameWithType: CommandFactoryTest.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 354
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Tests that the MakeCommand method throws a FactoryException
+
+    when provided with an invalid command string.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      [ExpectedException(typeof(FactoryException))]
+
+      public void TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()
+    content.vb: >-
+      <TestMethod>
+
+      <ExpectedException(GetType(FactoryException))>
+
+      Public Sub TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: BOOSE.FactoryException
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Poke_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Poke_ShouldReturnReset
+  id: TestMakeCommand_Poke_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Poke_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Poke_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Poke_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Poke_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 379
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "poke" command returns a <xref href="ASE_Suyash_Silwal_77356849.ApplicationPoke" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Poke_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Poke_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Poke_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Peek_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Peek_ShouldReturnReset
+  id: TestMakeCommand_Peek_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Peek_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Peek_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Peek_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Peek_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 395
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "poke" command returns a <xref href="ASE_Suyash_Silwal_77356849.ApplicationPeek" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Peek_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Peek_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Peek_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Else_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Else_ShouldReturnReset
+  id: TestMakeCommand_Else_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Else_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Else_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Else_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Else_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 411
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "else" command returns a <xref href="ASE_Suyash_Silwal_77356849.ApplicationElse" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Else_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Else_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Else_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_If_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_If_ShouldReturnReset
+  id: TestMakeCommand_If_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_If_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_If_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_If_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_If_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 428
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "else" command returns a <xref href="ASE_Suyash_Silwal_77356849.ApplicationIf" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_If_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_If_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_If_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_End_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_End_ShouldReturnReset
+  id: TestMakeCommand_End_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_End_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_End_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_End_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_End_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 444
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "end" command returns a <xref href="ASE_Suyash_Silwal_77356849.ApplicationEnd" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_End_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_End_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_End_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_While_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_While_ShouldReturnReset
+  id: TestMakeCommand_While_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_While_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_While_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_While_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_While_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 461
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "while" command returns a <xref href="ASE_Suyash_Silwal_77356849.ApplicationWhile" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_While_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_While_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_While_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_For_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_For_ShouldReturnReset
+  id: TestMakeCommand_For_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_For_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_For_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_For_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_For_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 477
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "for" command returns a <xref href="ASE_Suyash_Silwal_77356849.MyApp.ApplicationFor" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_For_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_For_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_For_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Int_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Int_ShouldReturnReset
+  id: TestMakeCommand_Int_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Int_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Int_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Int_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Int_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 493
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "int" command returns a <xref href="ASE_Suyash_Silwal_77356849.ApplicationInt" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Int_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Int_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Int_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Real_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Real_ShouldReturnReset
+  id: TestMakeCommand_Real_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Real_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Real_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Real_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Real_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 509
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "real" command returns a <xref href="ASE_Suyash_Silwal_77356849.ApplicationReal" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Real_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Real_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Real_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Boolean_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Boolean_ShouldReturnReset
+  id: TestMakeCommand_Boolean_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Boolean_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Boolean_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Boolean_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Boolean_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 526
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "boolean" command returns a <xref href="ASE_Suyash_Silwal_77356849.ApplicationBoolean" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Boolean_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Boolean_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Boolean_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Call_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Call_ShouldReturnReset
+  id: TestMakeCommand_Call_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Call_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Call_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Call_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Call_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 542
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "call" command returns a <xref href="BOOSE.Call" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Call_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Call_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Call_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Evaluation_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Evaluation_ShouldReturnReset
+  id: TestMakeCommand_Evaluation_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Evaluation_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Evaluation_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Evaluation_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Evaluation_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 558
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "call" command returns a <xref href="BOOSE.Evaluation" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Evaluation_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Evaluation_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Evaluation_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Array_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Array_ShouldReturnReset
+  id: TestMakeCommand_Array_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_Array_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_Array_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Array_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_Array_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 574
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "array" command returns a <xref href="ASE_Suyash_Silwal_77356849.ApplicationArray" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_Array_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_Array_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Array_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_method_ShouldReturnReset
+  commentId: M:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_method_ShouldReturnReset
+  id: TestMakeCommand_method_ShouldReturnReset
+  parent: ASE_Assignment_Test_Case.CommandFactoryTest
+  langs:
+  - csharp
+  - vb
+  name: TestMakeCommand_method_ShouldReturnReset()
+  nameWithType: CommandFactoryTest.TestMakeCommand_method_ShouldReturnReset()
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_method_ShouldReturnReset()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestMakeCommand_method_ShouldReturnReset
+    path: ASE_Assignment_Test_Case/CommandFactoryTest.cs
+    startLine: 590
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the "method" command returns a <xref href="ASE_Suyash_Silwal_77356849.ApplicationMethod" data-throw-if-not-resolved="false"></xref> object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestMakeCommand_method_ShouldReturnReset()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestMakeCommand_method_ShouldReturnReset()
+  overload: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_method_ShouldReturnReset*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment_Test_Case
+  commentId: N:ASE_Assignment_Test_Case
+  href: ASE_Assignment_Test_Case.html
+  name: ASE_Assignment_Test_Case
+  nameWithType: ASE_Assignment_Test_Case
+  fullName: ASE_Assignment_Test_Case
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.SetUp*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.SetUp
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_SetUp
+  name: SetUp
+  nameWithType: CommandFactoryTest.SetUp
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.SetUp
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Circle_ShouldReturnAppCircle*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Circle_ShouldReturnAppCircle
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Circle_ShouldReturnAppCircle
+  name: TestMakeCommand_Circle_ShouldReturnAppCircle
+  nameWithType: CommandFactoryTest.TestMakeCommand_Circle_ShouldReturnAppCircle
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Circle_ShouldReturnAppCircle
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  name: TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  nameWithType: CommandFactoryTest.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Rect_ShouldReturnAppRectangle*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Rect_ShouldReturnAppRectangle
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Rect_ShouldReturnAppRectangle
+  name: TestMakeCommand_Rect_ShouldReturnAppRectangle
+  nameWithType: CommandFactoryTest.TestMakeCommand_Rect_ShouldReturnAppRectangle
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Rect_ShouldReturnAppRectangle
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Tri_ShouldReturnTriangle*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Tri_ShouldReturnTriangle
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Tri_ShouldReturnTriangle
+  name: TestMakeCommand_Tri_ShouldReturnTriangle
+  nameWithType: CommandFactoryTest.TestMakeCommand_Tri_ShouldReturnTriangle
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Tri_ShouldReturnTriangle
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_WriteTo_ShouldReturnWriteTo*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  name: TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  nameWithType: CommandFactoryTest.TestMakeCommand_WriteTo_ShouldReturnWriteTo
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_WriteTo_ShouldReturnWriteTo
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  name: TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  nameWithType: CommandFactoryTest.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenColour_ShouldReturnAppPenColour*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  name: TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  nameWithType: CommandFactoryTest.TestMakeCommand_PenColour_ShouldReturnAppPenColour
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenColour_ShouldReturnAppPenColour
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Fill_ShouldReturnFill*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Fill_ShouldReturnFill
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Fill_ShouldReturnFill
+  name: TestMakeCommand_Fill_ShouldReturnFill
+  nameWithType: CommandFactoryTest.TestMakeCommand_Fill_ShouldReturnFill
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Fill_ShouldReturnFill
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenSize_ShouldReturnPenSize*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenSize_ShouldReturnPenSize
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_PenSize_ShouldReturnPenSize
+  name: TestMakeCommand_PenSize_ShouldReturnPenSize
+  nameWithType: CommandFactoryTest.TestMakeCommand_PenSize_ShouldReturnPenSize
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenSize_ShouldReturnPenSize
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Clear_ShouldReturnClear*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Clear_ShouldReturnClear
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Clear_ShouldReturnClear
+  name: TestMakeCommand_Clear_ShouldReturnClear
+  nameWithType: CommandFactoryTest.TestMakeCommand_Clear_ShouldReturnClear
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Clear_ShouldReturnClear
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Reset_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Reset_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Reset_ShouldReturnReset
+  name: TestMakeCommand_Reset_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_Reset_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Reset_ShouldReturnReset
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  name: TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  nameWithType: CommandFactoryTest.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException
+- uid: ASE_Suyash_Silwal_77356849.ApplicationPoke
+  commentId: T:ASE_Suyash_Silwal_77356849.ApplicationPoke
+  href: ASE_Suyash_Silwal_77356849.ApplicationPoke.html
+  name: ApplicationPoke
+  nameWithType: ApplicationPoke
+  fullName: ASE_Suyash_Silwal_77356849.ApplicationPoke
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Poke_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Poke_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Poke_ShouldReturnReset
+  name: TestMakeCommand_Poke_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_Poke_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Poke_ShouldReturnReset
+- uid: ASE_Suyash_Silwal_77356849.ApplicationPeek
+  commentId: T:ASE_Suyash_Silwal_77356849.ApplicationPeek
+  href: ASE_Suyash_Silwal_77356849.ApplicationPeek.html
+  name: ApplicationPeek
+  nameWithType: ApplicationPeek
+  fullName: ASE_Suyash_Silwal_77356849.ApplicationPeek
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Peek_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Peek_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Peek_ShouldReturnReset
+  name: TestMakeCommand_Peek_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_Peek_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Peek_ShouldReturnReset
+- uid: ASE_Suyash_Silwal_77356849.ApplicationElse
+  commentId: T:ASE_Suyash_Silwal_77356849.ApplicationElse
+  href: ASE_Suyash_Silwal_77356849.ApplicationElse.html
+  name: ApplicationElse
+  nameWithType: ApplicationElse
+  fullName: ASE_Suyash_Silwal_77356849.ApplicationElse
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Else_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Else_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Else_ShouldReturnReset
+  name: TestMakeCommand_Else_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_Else_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Else_ShouldReturnReset
+- uid: ASE_Suyash_Silwal_77356849.ApplicationIf
+  commentId: T:ASE_Suyash_Silwal_77356849.ApplicationIf
+  href: ASE_Suyash_Silwal_77356849.ApplicationIf.html
+  name: ApplicationIf
+  nameWithType: ApplicationIf
+  fullName: ASE_Suyash_Silwal_77356849.ApplicationIf
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_If_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_If_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_If_ShouldReturnReset
+  name: TestMakeCommand_If_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_If_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_If_ShouldReturnReset
+- uid: ASE_Suyash_Silwal_77356849.ApplicationEnd
+  commentId: T:ASE_Suyash_Silwal_77356849.ApplicationEnd
+  href: ASE_Suyash_Silwal_77356849.ApplicationEnd.html
+  name: ApplicationEnd
+  nameWithType: ApplicationEnd
+  fullName: ASE_Suyash_Silwal_77356849.ApplicationEnd
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_End_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_End_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_End_ShouldReturnReset
+  name: TestMakeCommand_End_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_End_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_End_ShouldReturnReset
+- uid: ASE_Suyash_Silwal_77356849.ApplicationWhile
+  commentId: T:ASE_Suyash_Silwal_77356849.ApplicationWhile
+  href: ASE_Suyash_Silwal_77356849.ApplicationWhile.html
+  name: ApplicationWhile
+  nameWithType: ApplicationWhile
+  fullName: ASE_Suyash_Silwal_77356849.ApplicationWhile
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_While_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_While_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_While_ShouldReturnReset
+  name: TestMakeCommand_While_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_While_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_While_ShouldReturnReset
+- uid: ASE_Suyash_Silwal_77356849.MyApp.ApplicationFor
+  commentId: T:ASE_Suyash_Silwal_77356849.MyApp.ApplicationFor
+  href: ASE_Suyash_Silwal_77356849.MyApp.ApplicationFor.html
+  name: ApplicationFor
+  nameWithType: ApplicationFor
+  fullName: ASE_Suyash_Silwal_77356849.MyApp.ApplicationFor
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_For_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_For_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_For_ShouldReturnReset
+  name: TestMakeCommand_For_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_For_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_For_ShouldReturnReset
+- uid: ASE_Suyash_Silwal_77356849.ApplicationInt
+  commentId: T:ASE_Suyash_Silwal_77356849.ApplicationInt
+  href: ASE_Suyash_Silwal_77356849.ApplicationInt.html
+  name: ApplicationInt
+  nameWithType: ApplicationInt
+  fullName: ASE_Suyash_Silwal_77356849.ApplicationInt
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Int_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Int_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Int_ShouldReturnReset
+  name: TestMakeCommand_Int_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_Int_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Int_ShouldReturnReset
+- uid: ASE_Suyash_Silwal_77356849.ApplicationReal
+  commentId: T:ASE_Suyash_Silwal_77356849.ApplicationReal
+  href: ASE_Suyash_Silwal_77356849.ApplicationReal.html
+  name: ApplicationReal
+  nameWithType: ApplicationReal
+  fullName: ASE_Suyash_Silwal_77356849.ApplicationReal
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Real_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Real_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Real_ShouldReturnReset
+  name: TestMakeCommand_Real_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_Real_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Real_ShouldReturnReset
+- uid: ASE_Suyash_Silwal_77356849.ApplicationBoolean
+  commentId: T:ASE_Suyash_Silwal_77356849.ApplicationBoolean
+  href: ASE_Suyash_Silwal_77356849.ApplicationBoolean.html
+  name: ApplicationBoolean
+  nameWithType: ApplicationBoolean
+  fullName: ASE_Suyash_Silwal_77356849.ApplicationBoolean
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Boolean_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Boolean_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Boolean_ShouldReturnReset
+  name: TestMakeCommand_Boolean_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_Boolean_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Boolean_ShouldReturnReset
+- uid: BOOSE.Call
+  commentId: T:BOOSE.Call
+  isExternal: true
+  name: Call
+  nameWithType: Call
+  fullName: BOOSE.Call
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Call_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Call_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Call_ShouldReturnReset
+  name: TestMakeCommand_Call_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_Call_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Call_ShouldReturnReset
+- uid: BOOSE.Evaluation
+  commentId: T:BOOSE.Evaluation
+  parent: BOOSE
+  isExternal: true
+  name: Evaluation
+  nameWithType: Evaluation
+  fullName: BOOSE.Evaluation
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Evaluation_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Evaluation_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Evaluation_ShouldReturnReset
+  name: TestMakeCommand_Evaluation_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_Evaluation_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Evaluation_ShouldReturnReset
+- uid: BOOSE
+  commentId: N:BOOSE
+  isExternal: true
+  name: BOOSE
+  nameWithType: BOOSE
+  fullName: BOOSE
+- uid: ASE_Suyash_Silwal_77356849.ApplicationArray
+  commentId: T:ASE_Suyash_Silwal_77356849.ApplicationArray
+  parent: ASE_Suyash_Silwal_77356849
+  href: ASE_Suyash_Silwal_77356849.ApplicationArray.html
+  name: ApplicationArray
+  nameWithType: ApplicationArray
+  fullName: ASE_Suyash_Silwal_77356849.ApplicationArray
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Array_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Array_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Array_ShouldReturnReset
+  name: TestMakeCommand_Array_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_Array_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Array_ShouldReturnReset
+- uid: ASE_Suyash_Silwal_77356849
+  commentId: N:ASE_Suyash_Silwal_77356849
+  href: ASE_Suyash_Silwal_77356849.html
+  name: ASE_Suyash_Silwal_77356849
+  nameWithType: ASE_Suyash_Silwal_77356849
+  fullName: ASE_Suyash_Silwal_77356849
+- uid: ASE_Suyash_Silwal_77356849.ApplicationMethod
+  commentId: T:ASE_Suyash_Silwal_77356849.ApplicationMethod
+  href: ASE_Suyash_Silwal_77356849.ApplicationMethod.html
+  name: ApplicationMethod
+  nameWithType: ApplicationMethod
+  fullName: ASE_Suyash_Silwal_77356849.ApplicationMethod
+- uid: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_method_ShouldReturnReset*
+  commentId: Overload:ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_method_ShouldReturnReset
+  href: ASE_Assignment_Test_Case.CommandFactoryTest.html#ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_method_ShouldReturnReset
+  name: TestMakeCommand_method_ShouldReturnReset
+  nameWithType: CommandFactoryTest.TestMakeCommand_method_ShouldReturnReset
+  fullName: ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_method_ShouldReturnReset

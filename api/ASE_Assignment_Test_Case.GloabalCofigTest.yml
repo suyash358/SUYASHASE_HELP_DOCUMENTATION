@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test_Case.GloabalCofigTest
+  commentId: T:ASE_Assignment_Test_Case.GloabalCofigTest
+  id: GloabalCofigTest
+  parent: ASE_Assignment_Test_Case
+  children:
+  - ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetIsFillEnabled
+  - ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxX
+  - ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxY
+  - ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetPenSize
+  langs:
+  - csharp
+  - vb
+  name: GloabalCofigTest
+  nameWithType: GloabalCofigTest
+  fullName: ASE_Assignment_Test_Case.GloabalCofigTest
+  type: Class
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/GloabalCofigTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: GloabalCofigTest
+    path: ASE_Assignment_Test_Case/GloabalCofigTest.cs
+    startLine: 13
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: >-
+    Unit tests for the GlobalConfig class.
+
+    Ensures that the configuration properties are set and retrieved correctly.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class GloabalCofigTest
+    content.vb: >-
+      <TestClass>
+
+      Public Class GloabalCofigTest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxX
+  commentId: M:ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxX
+  id: TestSetAndGetMaxX
+  parent: ASE_Assignment_Test_Case.GloabalCofigTest
+  langs:
+  - csharp
+  - vb
+  name: TestSetAndGetMaxX()
+  nameWithType: GloabalCofigTest.TestSetAndGetMaxX()
+  fullName: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxX()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/GloabalCofigTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestSetAndGetMaxX
+    path: ASE_Assignment_Test_Case/GloabalCofigTest.cs
+    startLine: 19
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the MaxX property can be set and retrieved correctly.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestSetAndGetMaxX()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestSetAndGetMaxX()
+  overload: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxX*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxY
+  commentId: M:ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxY
+  id: TestSetAndGetMaxY
+  parent: ASE_Assignment_Test_Case.GloabalCofigTest
+  langs:
+  - csharp
+  - vb
+  name: TestSetAndGetMaxY()
+  nameWithType: GloabalCofigTest.TestSetAndGetMaxY()
+  fullName: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxY()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/GloabalCofigTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestSetAndGetMaxY
+    path: ASE_Assignment_Test_Case/GloabalCofigTest.cs
+    startLine: 47
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the MaxY property can be set and retrieved correctly.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestSetAndGetMaxY()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestSetAndGetMaxY()
+  overload: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxY*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetIsFillEnabled
+  commentId: M:ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetIsFillEnabled
+  id: TestSetAndGetIsFillEnabled
+  parent: ASE_Assignment_Test_Case.GloabalCofigTest
+  langs:
+  - csharp
+  - vb
+  name: TestSetAndGetIsFillEnabled()
+  nameWithType: GloabalCofigTest.TestSetAndGetIsFillEnabled()
+  fullName: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetIsFillEnabled()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/GloabalCofigTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestSetAndGetIsFillEnabled
+    path: ASE_Assignment_Test_Case/GloabalCofigTest.cs
+    startLine: 74
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the filedStatus property (IsFillEnabled) can be set and retrieved correctly.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestSetAndGetIsFillEnabled()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestSetAndGetIsFillEnabled()
+  overload: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetIsFillEnabled*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetPenSize
+  commentId: M:ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetPenSize
+  id: TestSetAndGetPenSize
+  parent: ASE_Assignment_Test_Case.GloabalCofigTest
+  langs:
+  - csharp
+  - vb
+  name: TestSetAndGetPenSize()
+  nameWithType: GloabalCofigTest.TestSetAndGetPenSize()
+  fullName: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetPenSize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/GloabalCofigTest.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestSetAndGetPenSize
+    path: ASE_Assignment_Test_Case/GloabalCofigTest.cs
+    startLine: 102
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the PenSize property can be set and retrieved correctly.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestSetAndGetPenSize()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestSetAndGetPenSize()
+  overload: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetPenSize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment_Test_Case
+  commentId: N:ASE_Assignment_Test_Case
+  href: ASE_Assignment_Test_Case.html
+  name: ASE_Assignment_Test_Case
+  nameWithType: ASE_Assignment_Test_Case
+  fullName: ASE_Assignment_Test_Case
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxX*
+  commentId: Overload:ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxX
+  href: ASE_Assignment_Test_Case.GloabalCofigTest.html#ASE_Assignment_Test_Case_GloabalCofigTest_TestSetAndGetMaxX
+  name: TestSetAndGetMaxX
+  nameWithType: GloabalCofigTest.TestSetAndGetMaxX
+  fullName: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxX
+- uid: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxY*
+  commentId: Overload:ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxY
+  href: ASE_Assignment_Test_Case.GloabalCofigTest.html#ASE_Assignment_Test_Case_GloabalCofigTest_TestSetAndGetMaxY
+  name: TestSetAndGetMaxY
+  nameWithType: GloabalCofigTest.TestSetAndGetMaxY
+  fullName: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetMaxY
+- uid: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetIsFillEnabled*
+  commentId: Overload:ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetIsFillEnabled
+  href: ASE_Assignment_Test_Case.GloabalCofigTest.html#ASE_Assignment_Test_Case_GloabalCofigTest_TestSetAndGetIsFillEnabled
+  name: TestSetAndGetIsFillEnabled
+  nameWithType: GloabalCofigTest.TestSetAndGetIsFillEnabled
+  fullName: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetIsFillEnabled
+- uid: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetPenSize*
+  commentId: Overload:ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetPenSize
+  href: ASE_Assignment_Test_Case.GloabalCofigTest.html#ASE_Assignment_Test_Case_GloabalCofigTest_TestSetAndGetPenSize
+  name: TestSetAndGetPenSize
+  nameWithType: GloabalCofigTest.TestSetAndGetPenSize
+  fullName: ASE_Assignment_Test_Case.GloabalCofigTest.TestSetAndGetPenSize

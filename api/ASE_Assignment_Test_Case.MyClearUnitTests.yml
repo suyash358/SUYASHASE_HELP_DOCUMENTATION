@@ -1,0 +1,636 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests
+  commentId: T:ASE_Assignment_Test_Case.MyClearUnitTests
+  id: MyClearUnitTests
+  parent: ASE_Assignment_Test_Case
+  children:
+  - ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters
+  - ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  - ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  - ASE_Assignment_Test_Case.MyClearUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid
+  - ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldClearCanvas_WhenCanvasIsValid
+  - ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldHandleNullCanvas_Gracefully
+  - ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldNotThrowException_WhenCanvasIsEmpty
+  - ASE_Assignment_Test_Case.MyClearUnitTests.TestInitialize
+  langs:
+  - csharp
+  - vb
+  name: MyClearUnitTests
+  nameWithType: MyClearUnitTests
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests
+  type: Class
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyClearUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: MyClearUnitTests
+    path: ASE_Assignment_Test_Case/MyClearUnitTests.cs
+    startLine: 11
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class MyClearUnitTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class MyClearUnitTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.TestInitialize
+  commentId: M:ASE_Assignment_Test_Case.MyClearUnitTests.TestInitialize
+  id: TestInitialize
+  parent: ASE_Assignment_Test_Case.MyClearUnitTests
+  langs:
+  - csharp
+  - vb
+  name: TestInitialize()
+  nameWithType: MyClearUnitTests.TestInitialize()
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.TestInitialize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyClearUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestInitialize
+    path: ASE_Assignment_Test_Case/MyClearUnitTests.cs
+    startLine: 16
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void TestInitialize()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub TestInitialize()
+  overload: ASE_Assignment_Test_Case.MyClearUnitTests.TestInitialize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid
+  commentId: M:ASE_Assignment_Test_Case.MyClearUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid
+  id: Constructor_ShouldInitialize_WhenCanvasIsValid
+  parent: ASE_Assignment_Test_Case.MyClearUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_ShouldInitialize_WhenCanvasIsValid()
+  nameWithType: MyClearUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid()
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyClearUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Constructor_ShouldInitialize_WhenCanvasIsValid
+    path: ASE_Assignment_Test_Case/MyClearUnitTests.cs
+    startLine: 23
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Constructor_ShouldInitialize_WhenCanvasIsValid()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Constructor_ShouldInitialize_WhenCanvasIsValid()
+  overload: ASE_Assignment_Test_Case.MyClearUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldClearCanvas_WhenCanvasIsValid
+  commentId: M:ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldClearCanvas_WhenCanvasIsValid
+  id: Execute_ShouldClearCanvas_WhenCanvasIsValid
+  parent: ASE_Assignment_Test_Case.MyClearUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Execute_ShouldClearCanvas_WhenCanvasIsValid()
+  nameWithType: MyClearUnitTests.Execute_ShouldClearCanvas_WhenCanvasIsValid()
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldClearCanvas_WhenCanvasIsValid()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyClearUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Execute_ShouldClearCanvas_WhenCanvasIsValid
+    path: ASE_Assignment_Test_Case/MyClearUnitTests.cs
+    startLine: 31
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Execute_ShouldClearCanvas_WhenCanvasIsValid()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Execute_ShouldClearCanvas_WhenCanvasIsValid()
+  overload: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldClearCanvas_WhenCanvasIsValid*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldNotThrowException_WhenCanvasIsEmpty
+  commentId: M:ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldNotThrowException_WhenCanvasIsEmpty
+  id: Execute_ShouldNotThrowException_WhenCanvasIsEmpty
+  parent: ASE_Assignment_Test_Case.MyClearUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Execute_ShouldNotThrowException_WhenCanvasIsEmpty()
+  nameWithType: MyClearUnitTests.Execute_ShouldNotThrowException_WhenCanvasIsEmpty()
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldNotThrowException_WhenCanvasIsEmpty()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyClearUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Execute_ShouldNotThrowException_WhenCanvasIsEmpty
+    path: ASE_Assignment_Test_Case/MyClearUnitTests.cs
+    startLine: 41
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Execute_ShouldNotThrowException_WhenCanvasIsEmpty()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Execute_ShouldNotThrowException_WhenCanvasIsEmpty()
+  overload: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldNotThrowException_WhenCanvasIsEmpty*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  commentId: M:ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  id: CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  parent: ASE_Assignment_Test_Case.MyClearUnitTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ShouldNotThrowException_WhenParameterListIsNull()
+  nameWithType: MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull()
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyClearUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+    path: ASE_Assignment_Test_Case/MyClearUnitTests.cs
+    startLine: 52
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ShouldNotThrowException_WhenParameterListIsNull()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ShouldNotThrowException_WhenParameterListIsNull()
+  overload: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  commentId: M:ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  id: CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  parent: ASE_Assignment_Test_Case.MyClearUnitTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty()
+  nameWithType: MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty()
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyClearUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+    path: ASE_Assignment_Test_Case/MyClearUnitTests.cs
+    startLine: 62
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty()
+  overload: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters
+  commentId: M:ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters
+  id: CheckParameters_ShouldIgnoreAdditionalParameters
+  parent: ASE_Assignment_Test_Case.MyClearUnitTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ShouldIgnoreAdditionalParameters()
+  nameWithType: MyClearUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters()
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyClearUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: CheckParameters_ShouldIgnoreAdditionalParameters
+    path: ASE_Assignment_Test_Case/MyClearUnitTests.cs
+    startLine: 72
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ShouldIgnoreAdditionalParameters()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ShouldIgnoreAdditionalParameters()
+  overload: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldHandleNullCanvas_Gracefully
+  commentId: M:ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldHandleNullCanvas_Gracefully
+  id: Execute_ShouldHandleNullCanvas_Gracefully
+  parent: ASE_Assignment_Test_Case.MyClearUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Execute_ShouldHandleNullCanvas_Gracefully()
+  nameWithType: MyClearUnitTests.Execute_ShouldHandleNullCanvas_Gracefully()
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldHandleNullCanvas_Gracefully()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyClearUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Execute_ShouldHandleNullCanvas_Gracefully
+    path: ASE_Assignment_Test_Case/MyClearUnitTests.cs
+    startLine: 82
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Execute_ShouldHandleNullCanvas_Gracefully()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Execute_ShouldHandleNullCanvas_Gracefully()
+  overload: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldHandleNullCanvas_Gracefully*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment_Test_Case
+  commentId: N:ASE_Assignment_Test_Case
+  href: ASE_Assignment_Test_Case.html
+  name: ASE_Assignment_Test_Case
+  nameWithType: ASE_Assignment_Test_Case
+  fullName: ASE_Assignment_Test_Case
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.TestInitialize*
+  commentId: Overload:ASE_Assignment_Test_Case.MyClearUnitTests.TestInitialize
+  href: ASE_Assignment_Test_Case.MyClearUnitTests.html#ASE_Assignment_Test_Case_MyClearUnitTests_TestInitialize
+  name: TestInitialize
+  nameWithType: MyClearUnitTests.TestInitialize
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.TestInitialize
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid*
+  commentId: Overload:ASE_Assignment_Test_Case.MyClearUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid
+  href: ASE_Assignment_Test_Case.MyClearUnitTests.html#ASE_Assignment_Test_Case_MyClearUnitTests_Constructor_ShouldInitialize_WhenCanvasIsValid
+  name: Constructor_ShouldInitialize_WhenCanvasIsValid
+  nameWithType: MyClearUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldClearCanvas_WhenCanvasIsValid*
+  commentId: Overload:ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldClearCanvas_WhenCanvasIsValid
+  href: ASE_Assignment_Test_Case.MyClearUnitTests.html#ASE_Assignment_Test_Case_MyClearUnitTests_Execute_ShouldClearCanvas_WhenCanvasIsValid
+  name: Execute_ShouldClearCanvas_WhenCanvasIsValid
+  nameWithType: MyClearUnitTests.Execute_ShouldClearCanvas_WhenCanvasIsValid
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldClearCanvas_WhenCanvasIsValid
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldNotThrowException_WhenCanvasIsEmpty*
+  commentId: Overload:ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldNotThrowException_WhenCanvasIsEmpty
+  href: ASE_Assignment_Test_Case.MyClearUnitTests.html#ASE_Assignment_Test_Case_MyClearUnitTests_Execute_ShouldNotThrowException_WhenCanvasIsEmpty
+  name: Execute_ShouldNotThrowException_WhenCanvasIsEmpty
+  nameWithType: MyClearUnitTests.Execute_ShouldNotThrowException_WhenCanvasIsEmpty
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldNotThrowException_WhenCanvasIsEmpty
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull*
+  commentId: Overload:ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  href: ASE_Assignment_Test_Case.MyClearUnitTests.html#ASE_Assignment_Test_Case_MyClearUnitTests_CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  name: CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  nameWithType: MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty*
+  commentId: Overload:ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  href: ASE_Assignment_Test_Case.MyClearUnitTests.html#ASE_Assignment_Test_Case_MyClearUnitTests_CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  name: CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  nameWithType: MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters*
+  commentId: Overload:ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters
+  href: ASE_Assignment_Test_Case.MyClearUnitTests.html#ASE_Assignment_Test_Case_MyClearUnitTests_CheckParameters_ShouldIgnoreAdditionalParameters
+  name: CheckParameters_ShouldIgnoreAdditionalParameters
+  nameWithType: MyClearUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters
+- uid: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldHandleNullCanvas_Gracefully*
+  commentId: Overload:ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldHandleNullCanvas_Gracefully
+  href: ASE_Assignment_Test_Case.MyClearUnitTests.html#ASE_Assignment_Test_Case_MyClearUnitTests_Execute_ShouldHandleNullCanvas_Gracefully
+  name: Execute_ShouldHandleNullCanvas_Gracefully
+  nameWithType: MyClearUnitTests.Execute_ShouldHandleNullCanvas_Gracefully
+  fullName: ASE_Assignment_Test_Case.MyClearUnitTests.Execute_ShouldHandleNullCanvas_Gracefully

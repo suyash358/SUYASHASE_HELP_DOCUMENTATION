@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CommandFactoryTest | ASE Project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CommandFactoryTest | ASE Project ">
+      
+      <meta name="description" content="Unit tests for the StoredCommandFactory class. Ensures that the MakeCommand method correctly creates instances of commands and handles invalid inputs appropriately.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/new/main/apiSpec/new?filename=ASE_Assignment_Test_Case_CommandFactoryTest.md&amp;value=---%0Auid%3A%20ASE_Assignment_Test_Case.CommandFactoryTest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ASE Project">
+            ASE Project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ASE_Assignment_Test_Case.CommandFactoryTest">
+
+
+
+  <h1 id="ASE_Assignment_Test_Case_CommandFactoryTest" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest" class="text-break">
+Class CommandFactoryTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ASE_Assignment_Test_Case.html">ASE_Assignment_Test_Case</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ASE_Assignment_Test_Case.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Unit tests for the StoredCommandFactory class.
+Ensures that the MakeCommand method correctly creates instances of commands
+and handles invalid inputs appropriately.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestClass]
+public class CommandFactoryTest</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CommandFactoryTest</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_SetUp_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.SetUp*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_SetUp" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.SetUp">
+  SetUp()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the test by creating a new instance of StoredCommandFactory.
+This method is executed before each test method runs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestInitialize]
+public void SetUp()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Array_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Array_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Array_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Array_ShouldReturnReset">
+  TestMakeCommand_Array_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L575"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;array&quot; command returns a <a class="xref" href="ASE_Suyash_Silwal_77356849.ApplicationArray.html">ApplicationArray</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Array_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Boolean_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Boolean_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Boolean_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Boolean_ShouldReturnReset">
+  TestMakeCommand_Boolean_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L527"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;boolean&quot; command returns a <a class="xref" href="ASE_Suyash_Silwal_77356849.ApplicationBoolean.html">ApplicationBoolean</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Boolean_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Call_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Call_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Call_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Call_ShouldReturnReset">
+  TestMakeCommand_Call_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;call&quot; command returns a <span class="xref">BOOSE.Call</span> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Call_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Circle_ShouldReturnAppCircle_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Circle_ShouldReturnAppCircle*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Circle_ShouldReturnAppCircle" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Circle_ShouldReturnAppCircle">
+  TestMakeCommand_Circle_ShouldReturnAppCircle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L43"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the MakeCommand method returns an instance of MyAppCircle
+when provided with the &quot;circle&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Circle_ShouldReturnAppCircle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Clear_ShouldReturnClear_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Clear_ShouldReturnClear*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Clear_ShouldReturnClear" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Clear_ShouldReturnClear">
+  TestMakeCommand_Clear_ShouldReturnClear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the MakeCommand method returns an instance of MyAppClear
+when provided with the &quot;clear&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Clear_ShouldReturnClear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_DrawTo_ShouldReturnAppDrawTo_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_DrawTo_ShouldReturnAppDrawTo" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_DrawTo_ShouldReturnAppDrawTo">
+  TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L184"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the MakeCommand method returns an instance of MyAppDrawTo
+when provided with the &quot;drawto&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_DrawTo_ShouldReturnAppDrawTo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Else_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Else_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Else_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Else_ShouldReturnReset">
+  TestMakeCommand_Else_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;else&quot; command returns a <a class="xref" href="ASE_Suyash_Silwal_77356849.ApplicationElse.html">ApplicationElse</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Else_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_End_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_End_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_End_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_End_ShouldReturnReset">
+  TestMakeCommand_End_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;end&quot; command returns a <a class="xref" href="ASE_Suyash_Silwal_77356849.ApplicationEnd.html">ApplicationEnd</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_End_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Evaluation_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Evaluation_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Evaluation_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Evaluation_ShouldReturnReset">
+  TestMakeCommand_Evaluation_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L559"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;call&quot; command returns a <span class="xref">BOOSE.Evaluation</span> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Evaluation_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Fill_ShouldReturnFill_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Fill_ShouldReturnFill*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Fill_ShouldReturnFill" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Fill_ShouldReturnFill">
+  TestMakeCommand_Fill_ShouldReturnFill()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the MakeCommand method returns an instance of MyAppFill
+when provided with the &quot;fill&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Fill_ShouldReturnFill()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_For_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_For_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_For_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_For_ShouldReturnReset">
+  TestMakeCommand_For_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L478"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;for&quot; command returns a <a class="xref" href="ASE_Suyash_Silwal_77356849.MyApp.ApplicationFor.html">ApplicationFor</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_For_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_If_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_If_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_If_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_If_ShouldReturnReset">
+  TestMakeCommand_If_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L429"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;else&quot; command returns a <a class="xref" href="ASE_Suyash_Silwal_77356849.ApplicationIf.html">ApplicationIf</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_If_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Int_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Int_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Int_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Int_ShouldReturnReset">
+  TestMakeCommand_Int_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L494"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;int&quot; command returns a <a class="xref" href="ASE_Suyash_Silwal_77356849.ApplicationInt.html">ApplicationInt</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Int_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_InvalidCommand_ShouldThrowFactoryException_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_InvalidCommand_ShouldThrowFactoryException" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_InvalidCommand_ShouldThrowFactoryException">
+  TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the MakeCommand method throws a FactoryException
+when provided with an invalid command string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(FactoryException))]
+public void TestMakeCommand_InvalidCommand_ShouldThrowFactoryException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_MoveTo_ShouldReturnAppMoveTo_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_MoveTo_ShouldReturnAppMoveTo" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_MoveTo_ShouldReturnAppMoveTo">
+  TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the MakeCommand method returns an instance of MyAppMoveTo
+when provided with the &quot;moveto&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_MoveTo_ShouldReturnAppMoveTo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Peek_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Peek_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Peek_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Peek_ShouldReturnReset">
+  TestMakeCommand_Peek_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;poke&quot; command returns a <a class="xref" href="ASE_Suyash_Silwal_77356849.ApplicationPeek.html">ApplicationPeek</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Peek_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_PenColour_ShouldReturnAppPenColour_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenColour_ShouldReturnAppPenColour*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_PenColour_ShouldReturnAppPenColour" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenColour_ShouldReturnAppPenColour">
+  TestMakeCommand_PenColour_ShouldReturnAppPenColour()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the MakeCommand method returns an instance of MyAppPenColour
+when provided with the &quot;pencolour&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_PenColour_ShouldReturnAppPenColour()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_PenSize_ShouldReturnPenSize_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenSize_ShouldReturnPenSize*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_PenSize_ShouldReturnPenSize" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_PenSize_ShouldReturnPenSize">
+  TestMakeCommand_PenSize_ShouldReturnPenSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the MakeCommand method returns an instance of MyAppPenSize
+when provided with the &quot;pensize&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_PenSize_ShouldReturnPenSize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Poke_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Poke_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Poke_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Poke_ShouldReturnReset">
+  TestMakeCommand_Poke_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L380"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;poke&quot; command returns a <a class="xref" href="ASE_Suyash_Silwal_77356849.ApplicationPoke.html">ApplicationPoke</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Poke_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Real_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Real_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Real_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Real_ShouldReturnReset">
+  TestMakeCommand_Real_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;real&quot; command returns a <a class="xref" href="ASE_Suyash_Silwal_77356849.ApplicationReal.html">ApplicationReal</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Real_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Rect_ShouldReturnAppRectangle_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Rect_ShouldReturnAppRectangle*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Rect_ShouldReturnAppRectangle" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Rect_ShouldReturnAppRectangle">
+  TestMakeCommand_Rect_ShouldReturnAppRectangle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the MakeCommand method returns an instance of MyAppRectangle
+when provided with the &quot;rect&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Rect_ShouldReturnAppRectangle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Reset_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Reset_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Reset_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Reset_ShouldReturnReset">
+  TestMakeCommand_Reset_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the MakeCommand method returns an instance of MyAppReset
+when provided with the &quot;reset&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Reset_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Tri_ShouldReturnTriangle_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Tri_ShouldReturnTriangle*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_Tri_ShouldReturnTriangle" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_Tri_ShouldReturnTriangle">
+  TestMakeCommand_Tri_ShouldReturnTriangle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the MakeCommand method returns an instance of MyAppTriangle
+when provided with the &quot;tri&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_Tri_ShouldReturnTriangle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_While_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_While_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_While_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_While_ShouldReturnReset">
+  TestMakeCommand_While_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;while&quot; command returns a <a class="xref" href="ASE_Suyash_Silwal_77356849.ApplicationWhile.html">ApplicationWhile</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_While_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_WriteTo_ShouldReturnWriteTo_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_WriteTo_ShouldReturnWriteTo*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_WriteTo_ShouldReturnWriteTo" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_WriteTo_ShouldReturnWriteTo">
+  TestMakeCommand_WriteTo_ShouldReturnWriteTo()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the MakeCommand method returns an instance of MyAppWriteText
+when provided with the &quot;writeto&quot; command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_WriteTo_ShouldReturnWriteTo()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_method_ShouldReturnReset_" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_method_ShouldReturnReset*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_CommandFactoryTest_TestMakeCommand_method_ShouldReturnReset" data-uid="ASE_Assignment_Test_Case.CommandFactoryTest.TestMakeCommand_method_ShouldReturnReset">
+  TestMakeCommand_method_ShouldReturnReset()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L591"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests that the &quot;method&quot; command returns a <a class="xref" href="ASE_Suyash_Silwal_77356849.ApplicationMethod.html">ApplicationMethod</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestMakeCommand_method_ShouldReturnReset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/CommandFactoryTest.cs/#L18" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

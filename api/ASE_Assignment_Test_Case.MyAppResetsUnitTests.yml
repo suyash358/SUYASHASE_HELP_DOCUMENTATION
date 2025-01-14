@@ -1,0 +1,572 @@
+### YamlMime:ManagedReference
+items:
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests
+  commentId: T:ASE_Assignment_Test_Case.MyAppResetsUnitTests
+  id: MyAppResetsUnitTests
+  parent: ASE_Assignment_Test_Case
+  children:
+  - ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters
+  - ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  - ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  - ASE_Assignment_Test_Case.MyAppResetsUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid
+  - ASE_Assignment_Test_Case.MyAppResetsUnitTests.Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull
+  - ASE_Assignment_Test_Case.MyAppResetsUnitTests.TestInitialize
+  langs:
+  - csharp
+  - vb
+  name: MyAppResetsUnitTests
+  nameWithType: MyAppResetsUnitTests
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests
+  type: Class
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: MyAppResetsUnitTests
+    path: ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+    startLine: 18
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Unit tests for the MyAppReset command functionality.
+  remarks: >-
+    This test class verifies the behavior of the MyAppReset command, including its constructor,
+
+    parameter validation, and execution logic.
+  example: []
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class MyAppResetsUnitTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class MyAppResetsUnitTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests.TestInitialize
+  commentId: M:ASE_Assignment_Test_Case.MyAppResetsUnitTests.TestInitialize
+  id: TestInitialize
+  parent: ASE_Assignment_Test_Case.MyAppResetsUnitTests
+  langs:
+  - csharp
+  - vb
+  name: TestInitialize()
+  nameWithType: MyAppResetsUnitTests.TestInitialize()
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests.TestInitialize()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: TestInitialize
+    path: ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+    startLine: 29
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Sets up the test environment by creating a mock Canvas object.
+  example: []
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void TestInitialize()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub TestInitialize()
+  overload: ASE_Assignment_Test_Case.MyAppResetsUnitTests.TestInitialize*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid
+  commentId: M:ASE_Assignment_Test_Case.MyAppResetsUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid
+  id: Constructor_ShouldInitialize_WhenCanvasIsValid
+  parent: ASE_Assignment_Test_Case.MyAppResetsUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Constructor_ShouldInitialize_WhenCanvasIsValid()
+  nameWithType: MyAppResetsUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid()
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Constructor_ShouldInitialize_WhenCanvasIsValid
+    path: ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+    startLine: 39
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that the constructor initializes a valid MyAppReset command instance when a valid canvas is provided.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Constructor_ShouldInitialize_WhenCanvasIsValid()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Constructor_ShouldInitialize_WhenCanvasIsValid()
+  overload: ASE_Assignment_Test_Case.MyAppResetsUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  commentId: M:ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  id: CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  parent: ASE_Assignment_Test_Case.MyAppResetsUnitTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ShouldNotThrowException_WhenParameterListIsNull()
+  nameWithType: MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull()
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+    path: ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+    startLine: 52
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that CheckParameters does not throw an exception when the parameter list is null.
+  remarks: Verifies that the method gracefully handles a null parameter list without throwing exceptions.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ShouldNotThrowException_WhenParameterListIsNull()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ShouldNotThrowException_WhenParameterListIsNull()
+  overload: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  commentId: M:ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  id: CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  parent: ASE_Assignment_Test_Case.MyAppResetsUnitTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty()
+  nameWithType: MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty()
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+    path: ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+    startLine: 68
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that CheckParameters does not throw an exception when the parameter list is empty.
+  remarks: Verifies that the method gracefully handles an empty parameter list without throwing exceptions.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty()
+  overload: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters
+  commentId: M:ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters
+  id: CheckParameters_ShouldIgnoreAdditionalParameters
+  parent: ASE_Assignment_Test_Case.MyAppResetsUnitTests
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters_ShouldIgnoreAdditionalParameters()
+  nameWithType: MyAppResetsUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters()
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: CheckParameters_ShouldIgnoreAdditionalParameters
+    path: ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+    startLine: 84
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that CheckParameters ignores additional parameters without throwing exceptions.
+  remarks: Verifies that the method accepts unexpected or additional parameters without affecting functionality.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void CheckParameters_ShouldIgnoreAdditionalParameters()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub CheckParameters_ShouldIgnoreAdditionalParameters()
+  overload: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests.Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull
+  commentId: M:ASE_Assignment_Test_Case.MyAppResetsUnitTests.Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull
+  id: Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull
+  parent: ASE_Assignment_Test_Case.MyAppResetsUnitTests
+  langs:
+  - csharp
+  - vb
+  name: Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull()
+  nameWithType: MyAppResetsUnitTests.Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull()
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests.Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull()
+  type: Method
+  source:
+    remote:
+      path: ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+      branch: main
+      repo: https://github.com/ASE-Classroom/ase-demo-assignment-suyash358.git
+    id: Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull
+    path: ASE_Assignment_Test_Case/MyAppResetsUnitTests.cs
+    startLine: 100
+  assemblies:
+  - ASE_Assignment_Test_Case
+  namespace: ASE_Assignment_Test_Case
+  summary: Tests that executing the command throws a NullReferenceException when the canvas is null.
+  remarks: This test ensures that a proper exception is thrown if the command is executed without a valid canvas object.
+  example: []
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull()
+  overload: ASE_Assignment_Test_Case.MyAppResetsUnitTests.Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ASE_Assignment_Test_Case
+  commentId: N:ASE_Assignment_Test_Case
+  href: ASE_Assignment_Test_Case.html
+  name: ASE_Assignment_Test_Case
+  nameWithType: ASE_Assignment_Test_Case
+  fullName: ASE_Assignment_Test_Case
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests.TestInitialize*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppResetsUnitTests.TestInitialize
+  href: ASE_Assignment_Test_Case.MyAppResetsUnitTests.html#ASE_Assignment_Test_Case_MyAppResetsUnitTests_TestInitialize
+  name: TestInitialize
+  nameWithType: MyAppResetsUnitTests.TestInitialize
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests.TestInitialize
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppResetsUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid
+  href: ASE_Assignment_Test_Case.MyAppResetsUnitTests.html#ASE_Assignment_Test_Case_MyAppResetsUnitTests_Constructor_ShouldInitialize_WhenCanvasIsValid
+  name: Constructor_ShouldInitialize_WhenCanvasIsValid
+  nameWithType: MyAppResetsUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests.Constructor_ShouldInitialize_WhenCanvasIsValid
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  href: ASE_Assignment_Test_Case.MyAppResetsUnitTests.html#ASE_Assignment_Test_Case_MyAppResetsUnitTests_CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  name: CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  nameWithType: MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsNull
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  href: ASE_Assignment_Test_Case.MyAppResetsUnitTests.html#ASE_Assignment_Test_Case_MyAppResetsUnitTests_CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  name: CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  nameWithType: MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldNotThrowException_WhenParameterListIsEmpty
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters
+  href: ASE_Assignment_Test_Case.MyAppResetsUnitTests.html#ASE_Assignment_Test_Case_MyAppResetsUnitTests_CheckParameters_ShouldIgnoreAdditionalParameters
+  name: CheckParameters_ShouldIgnoreAdditionalParameters
+  nameWithType: MyAppResetsUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests.CheckParameters_ShouldIgnoreAdditionalParameters
+- uid: ASE_Assignment_Test_Case.MyAppResetsUnitTests.Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull*
+  commentId: Overload:ASE_Assignment_Test_Case.MyAppResetsUnitTests.Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull
+  href: ASE_Assignment_Test_Case.MyAppResetsUnitTests.html#ASE_Assignment_Test_Case_MyAppResetsUnitTests_Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull
+  name: Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull
+  nameWithType: MyAppResetsUnitTests.Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull
+  fullName: ASE_Assignment_Test_Case.MyAppResetsUnitTests.Execute_ShouldThrowNullReferenceException_WhenCanvasIsNull

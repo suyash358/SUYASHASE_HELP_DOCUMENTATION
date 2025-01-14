@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MyAppCanvasTest | ASE Project </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MyAppCanvasTest | ASE Project ">
+      
+      <meta name="description" content="Unit tests for the MyAppCanvas class. Ensures that canvas operations and configurations work as expected.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/new/main/apiSpec/new?filename=ASE_Assignment_Test_Case_MyAppCanvasTest.md&amp;value=---%0Auid%3A%20ASE_Assignment_Test_Case.MyAppCanvasTest%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ASE Project">
+            ASE Project
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest">
+
+
+
+  <h1 id="ASE_Assignment_Test_Case_MyAppCanvasTest" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest" class="text-break">
+Class MyAppCanvasTest  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ASE_Assignment_Test_Case.html">ASE_Assignment_Test_Case</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ASE_Assignment_Test_Case.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Unit tests for the MyAppCanvas class.
+Ensures that canvas operations and configurations work as expected.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestClass]
+public sealed class MyAppCanvasTest</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MyAppCanvasTest</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_canvas" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.canvas">
+  canvas
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The instance of DrawingCanvas used for testing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DrawingCanvas canvas</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ASE_Suyash_Silwal_77356849.MyApp.DrawingCanvas.html">DrawingCanvas</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_DrawTo_ShouldThrowException_WhenCoordinatesAreOutOfBounds_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.DrawTo_ShouldThrowException_WhenCoordinatesAreOutOfBounds*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_DrawTo_ShouldThrowException_WhenCoordinatesAreOutOfBounds" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.DrawTo_ShouldThrowException_WhenCoordinatesAreOutOfBounds">
+  DrawTo_ShouldThrowException_WhenCoordinatesAreOutOfBounds()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L395"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures an exception is thrown when attempting to draw to coordinates outside the canvas bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CanvasException))]
+public void DrawTo_ShouldThrowException_WhenCoordinatesAreOutOfBounds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_DrawTo_ShouldThrowException_WhenGraphicsContextIsNull_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.DrawTo_ShouldThrowException_WhenGraphicsContextIsNull*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_DrawTo_ShouldThrowException_WhenGraphicsContextIsNull" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.DrawTo_ShouldThrowException_WhenGraphicsContextIsNull">
+  DrawTo_ShouldThrowException_WhenGraphicsContextIsNull()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L368"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures exceptions are thrown when invalid conditions are met for drawing or movement operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CanvasException))]
+public void DrawTo_ShouldThrowException_WhenGraphicsContextIsNull()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_DrawTo_ShouldUpdateCursorPosition_WhenCoordinatesAreValid_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.DrawTo_ShouldUpdateCursorPosition_WhenCoordinatesAreValid*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_DrawTo_ShouldUpdateCursorPosition_WhenCoordinatesAreValid" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.DrawTo_ShouldUpdateCursorPosition_WhenCoordinatesAreValid">
+  DrawTo_ShouldUpdateCursorPosition_WhenCoordinatesAreValid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the cursor position is updated correctly when drawing to valid coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void DrawTo_ShouldUpdateCursorPosition_WhenCoordinatesAreValid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_MoveTo_ShouldThrowException_WhenCoordinatesAreOutOfBounds_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.MoveTo_ShouldThrowException_WhenCoordinatesAreOutOfBounds*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_MoveTo_ShouldThrowException_WhenCoordinatesAreOutOfBounds" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.MoveTo_ShouldThrowException_WhenCoordinatesAreOutOfBounds">
+  MoveTo_ShouldThrowException_WhenCoordinatesAreOutOfBounds()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures an exception is thrown when attempting to move the cursor to coordinates outside the canvas bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CanvasException))]
+public void MoveTo_ShouldThrowException_WhenCoordinatesAreOutOfBounds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_MoveTo_ShouldUpdateCursorPosition_WhenCoordinatesAreValid_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.MoveTo_ShouldUpdateCursorPosition_WhenCoordinatesAreValid*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_MoveTo_ShouldUpdateCursorPosition_WhenCoordinatesAreValid" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.MoveTo_ShouldUpdateCursorPosition_WhenCoordinatesAreValid">
+  MoveTo_ShouldUpdateCursorPosition_WhenCoordinatesAreValid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L484"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the cursor position is updated correctly when moving to valid coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void MoveTo_ShouldUpdateCursorPosition_WhenCoordinatesAreValid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_Rect_ShouldDrawFilledRectangle_WhenValid_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.Rect_ShouldDrawFilledRectangle_WhenValid*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_Rect_ShouldDrawFilledRectangle_WhenValid" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.Rect_ShouldDrawFilledRectangle_WhenValid">
+  Rect_ShouldDrawFilledRectangle_WhenValid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L543"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that a filled rectangle is drawn correctly when valid dimensions are provided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Rect_ShouldDrawFilledRectangle_WhenValid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_Rect_ShouldThrowException_WhenDimensionsAreInvalid_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.Rect_ShouldThrowException_WhenDimensionsAreInvalid*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_Rect_ShouldThrowException_WhenDimensionsAreInvalid" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.Rect_ShouldThrowException_WhenDimensionsAreInvalid">
+  Rect_ShouldThrowException_WhenDimensionsAreInvalid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L517"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures an exception is thrown when attempting to draw a rectangle with invalid dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CanvasException))]
+public void Rect_ShouldThrowException_WhenDimensionsAreInvalid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_SetCanvas_ShouldInitialize_WhenBitmapAndGraphicsAreValid_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.SetCanvas_ShouldInitialize_WhenBitmapAndGraphicsAreValid*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_SetCanvas_ShouldInitialize_WhenBitmapAndGraphicsAreValid" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.SetCanvas_ShouldInitialize_WhenBitmapAndGraphicsAreValid">
+  SetCanvas_ShouldInitialize_WhenBitmapAndGraphicsAreValid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L338"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that valid bitmap and graphics are set correctly for the canvas.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void SetCanvas_ShouldInitialize_WhenBitmapAndGraphicsAreValid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_SetColour_ShouldThrowException_WhenRGBValuesAreInvalid_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.SetColour_ShouldThrowException_WhenRGBValuesAreInvalid*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_SetColour_ShouldThrowException_WhenRGBValuesAreInvalid" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.SetColour_ShouldThrowException_WhenRGBValuesAreInvalid">
+  SetColour_ShouldThrowException_WhenRGBValuesAreInvalid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures an exception is thrown when attempting to set an invalid RGB color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CanvasException))]
+public void SetColour_ShouldThrowException_WhenRGBValuesAreInvalid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_SetUp_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.SetUp*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_SetUp" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.SetUp">
+  SetUp()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes the canvas object before each test.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestInitialize]
+public void SetUp()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestBoundaryPenPosition_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestBoundaryPenPosition*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestBoundaryPenPosition" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestBoundaryPenPosition">
+  TestBoundaryPenPosition()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates pen position stays within canvas boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestBoundaryPenPosition()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestCircleExceedsCanvas_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestCircleExceedsCanvas*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestCircleExceedsCanvas" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestCircleExceedsCanvas">
+  TestCircleExceedsCanvas()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures an exception is thrown if the circle exceeds canvas bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CanvasException))]
+public void TestCircleExceedsCanvas()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestCustomCanvasSizeInitialization_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestCustomCanvasSizeInitialization*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestCustomCanvasSizeInitialization" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestCustomCanvasSizeInitialization">
+  TestCustomCanvasSizeInitialization()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that custom canvas sizes can be set correctly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestCustomCanvasSizeInitialization()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestDefaultConstructor_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestDefaultConstructor*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestDefaultConstructor" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestDefaultConstructor">
+  TestDefaultConstructor()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies the default constructor initializes the canvas with default values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestDefaultConstructor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestDrawCircleInvalidRadius_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestDrawCircleInvalidRadius*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestDrawCircleInvalidRadius" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestDrawCircleInvalidRadius">
+  TestDrawCircleInvalidRadius()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures an exception is thrown when drawing a circle with an invalid radius.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestDrawCircleInvalidRadius()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestDrawCircleValid_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestDrawCircleValid*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestDrawCircleValid" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestDrawCircleValid">
+  TestDrawCircleValid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies a circle can be drawn with valid parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestDrawCircleValid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestExceedMaximumCanvasSize_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestExceedMaximumCanvasSize*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestExceedMaximumCanvasSize" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestExceedMaximumCanvasSize">
+  TestExceedMaximumCanvasSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures an exception is thrown when exceeding maximum canvas size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+[ExpectedException(typeof(CanvasException))]
+public void TestExceedMaximumCanvasSize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestInvalidCanvasSize_ShouldThrowCanvasException_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestInvalidCanvasSize_ShouldThrowCanvasException*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestInvalidCanvasSize_ShouldThrowCanvasException" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestInvalidCanvasSize_ShouldThrowCanvasException">
+  TestInvalidCanvasSize_ShouldThrowCanvasException()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures an exception is thrown when invalid canvas dimensions are set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestInvalidCanvasSize_ShouldThrowCanvasException()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestResetCanvas_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestResetCanvas*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestResetCanvas" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestResetCanvas">
+  TestResetCanvas()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L294"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that the canvas reset functionality works correctly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestResetCanvas()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestSetPenColorValid_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestSetPenColorValid*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestSetPenColorValid" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestSetPenColorValid">
+  TestSetPenColorValid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that a valid pen color can be set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestSetPenColorValid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestSetPenPositionInvalid_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestSetPenPositionInvalid*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestSetPenPositionInvalid" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestSetPenPositionInvalid">
+  TestSetPenPositionInvalid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures invalid pen positions are reset to default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestSetPenPositionInvalid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestSetPenPositionValid_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestSetPenPositionValid*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestSetPenPositionValid" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestSetPenPositionValid">
+  TestSetPenPositionValid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies the pen position can be set with valid coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestSetPenPositionValid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestSetPenSizeInvalid_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestSetPenSizeInvalid*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestSetPenSizeInvalid" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestSetPenSizeInvalid">
+  TestSetPenSizeInvalid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Ensures invalid pen sizes are reset to the default value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestSetPenSizeInvalid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestSetPenSizeValid_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestSetPenSizeValid*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestSetPenSizeValid" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestSetPenSizeValid">
+  TestSetPenSizeValid()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Verifies that a valid pen size can be set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestSetPenSizeValid()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestToggleShapeFilling_" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestToggleShapeFilling*"></a>
+
+  <h3 id="ASE_Assignment_Test_Case_MyAppCanvasTest_TestToggleShapeFilling" data-uid="ASE_Assignment_Test_Case.MyAppCanvasTest.TestToggleShapeFilling">
+  TestToggleShapeFilling()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tests the toggle functionality of shape filling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void TestToggleShapeFilling()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE-Classroom/ase-demo-assignment-suyash358/blob/main/ASE_Suyash_Silwal_77356849/ASE_Assignment_Test_Case/MyAppCanvasTest.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
